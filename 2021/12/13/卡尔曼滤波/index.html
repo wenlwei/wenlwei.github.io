@@ -4,19 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>卡尔曼滤波 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="入门1高斯 线性  进阶 放弃 精通">
+  <meta name="description" content="卡尔曼滤波滤波例如测量声波或者电波，我们想要获得一条平滑稳定的曲线，实际是多少就是多少。不过可能因为仪器比较便宜拉跨和其他误差影响得到的是波动的曲线。 滤波是__求均值__的一种方式，通过滤波过滤掉噪声值，可以使得曲线变得平滑，更趋近真实值   适用系统线性系统1.叠加性 f(a+b)&#x3D;f(a)+f(b) 假设y对应输出，x对应输入。对于同一个系统，y&#x3D;$x_1$+$x_2$等价与y&#x3D;$y_1$+">
 <meta property="og:type" content="article">
-<meta property="og:title" content="卡尔曼滤波">
+<meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/2021/12/13/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="入门1高斯 线性  进阶 放弃 精通">
+<meta property="og:description" content="卡尔曼滤波滤波例如测量声波或者电波，我们想要获得一条平滑稳定的曲线，实际是多少就是多少。不过可能因为仪器比较便宜拉跨和其他误差影响得到的是波动的曲线。 滤波是__求均值__的一种方式，通过滤波过滤掉噪声值，可以使得曲线变得平滑，更趋近真实值   适用系统线性系统1.叠加性 f(a+b)&#x3D;f(a)+f(b) 假设y对应输出，x对应输入。对于同一个系统，y&#x3D;$x_1$+$x_2$等价与y&#x3D;$y_1$+">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-12-13T01:41:46.000Z">
-<meta property="article:modified_time" content="2021-12-13T02:21:51.357Z">
+<meta property="og:image" content="c:/Users/Lenovo/Desktop/1.png">
+<meta property="og:image" content="c:/Users/Lenovo/Desktop/无标题.png">
+<meta property="article:published_time" content="2021-12-13T01:41:46.988Z">
+<meta property="article:modified_time" content="2021-12-13T06:09:41.930Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/Lenovo/Desktop/1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -76,36 +79,32 @@
         <section id="main"><article id="post-卡尔曼滤波" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/12/13/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T01:41:46.000Z" itemprop="datePublished">2021-12-13</time>
+  <time class="dt-published" datetime="2021-12-13T01:41:46.988Z" itemprop="datePublished">2021-12-13</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      卡尔曼滤波
-    </h1>
-  
-
-      </header>
-    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="入门1"><a href="#入门1" class="headerlink" title="入门1"></a>入门1</h2><p>高斯</p>
-<p>线性</p>
+        <h1 id="卡尔曼滤波"><a href="#卡尔曼滤波" class="headerlink" title="卡尔曼滤波"></a>卡尔曼滤波</h1><h2 id="滤波"><a href="#滤波" class="headerlink" title="滤波"></a>滤波</h2><p>例如测量声波或者电波，我们想要获得一条平滑稳定的曲线，实际是多少就是多少。不过可能因为<del>仪器比较便宜拉跨</del>和其他误差影响得到的是波动的曲线。</p>
+<p>滤波是__求均值__的一种方式，通过滤波过滤掉<strong>噪声值</strong>，可以使得曲线变得平滑，更趋近真实值</p>
+<p><img src="C:\Users\Lenovo\Desktop\1.png" alt="markdown"></p>
 <hr>
-<h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><hr>
-<h2 id="放弃"><a href="#放弃" class="headerlink" title="放弃"></a>放弃</h2><hr>
-<h2 id="精通"><a href="#精通" class="headerlink" title="精通"></a>精通</h2><hr>
-
+<h2 id="适用系统"><a href="#适用系统" class="headerlink" title="适用系统"></a>适用系统</h2><h3 id="线性系统"><a href="#线性系统" class="headerlink" title="线性系统"></a>线性系统</h3><p>1.叠加性</p>
+<p>f(a+b)=f(a)+f(b)</p>
+<p>假设y对应输出，x对应输入。对于<strong>同一个系统</strong>，y=$x_1$+$x_2$等价与y=$y_1$+$y_2$,其中$y_1$=$x_1$,$y_2$=$x_2$。</p>
+<p><img src="C:\Users\Lenovo\Desktop\无标题.png" alt="markdown"></p>
+<p>y=a$\times$$x_1$+b$\times$$x_2$</p>
+<p>2.齐次性</p>
+<p>对于同一系统，x增加k倍对应y也增加k倍</p>
+<hr>
+<h3 id="高斯系统"><a href="#高斯系统" class="headerlink" title="高斯系统"></a>高斯系统</h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/13/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/" data-id="ckx41vw6b00019gv04mp3666v" data-title="卡尔曼滤波" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/13/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/" data-id="ckx4a1gfg0002h4v079t28c6u" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -169,7 +168,7 @@
           </li>
         
           <li>
-            <a href="/2021/12/13/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/">卡尔曼滤波</a>
+            <a href="/2021/12/13/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/">(no title)</a>
           </li>
         
           <li>
