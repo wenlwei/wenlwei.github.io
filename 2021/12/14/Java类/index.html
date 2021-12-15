@@ -22,9 +22,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Java类 - Hexo</title>
-  
-    <meta name="keywords" content="java">
+  <title>学习Java类 - Hexo</title>
   
 
   
@@ -441,7 +439,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title">
-        Java类
+        学习Java类
       </h1>
       <div class='new-meta-box'>
         
@@ -476,7 +474,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="Java类" data-path="/2021/12/14/%E5%AD%A6%E4%B9%A0Java%E7%B1%BB/">
+      <div id="lc-pv" data-title="学习Java类" data-path="/2021/12/14/Java%E7%B1%BB/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -494,7 +492,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <h1 id="Java类"><a href="#Java类" class="headerlink" title="Java类"></a>Java类</h1><h2 id="字符串类"><a href="#字符串类" class="headerlink" title="字符串类"></a>字符串类</h2><h3 id="字符串处理的类"><a href="#字符串处理的类" class="headerlink" title="字符串处理的类"></a>字符串处理的类</h3><p><strong>String，StringBuffer</strong></p>
+  <h1 id="字符串类"><a href="#字符串类" class="headerlink" title="字符串类"></a>字符串类</h1><h3 id="字符串处理的类"><a href="#字符串处理的类" class="headerlink" title="字符串处理的类"></a>字符串处理的类</h3><p><strong>String，StringBuffer</strong></p>
 <p><strong>SringTokenizer</strong></p>
 <p><strong>StringBuilder</strong></p>
 <p><strong>StreamTokenozer</strong></p>
@@ -845,359 +843,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import java.text.ParseException;</span><br><span class="line">import java.text.SimpleDateFormat;</span><br><span class="line">import java.util.Calendar;</span><br><span class="line">import java.util.Date;</span><br><span class="line">public class Main &#123;</span><br><span class="line">	public static void main(String[] args)  &#123;</span><br><span class="line">		Calendar calendar = Calendar.getInstance();</span><br><span class="line">		Date date = new Date();</span><br><span class="line">		System.out.println(date.toString());</span><br><span class="line">		calendar.setTime(date);</span><br><span class="line">		int month = calendar.get(Calendar.MONTH);</span><br><span class="line">		System.out.println(month);//月份从0开始	  </span><br><span class="line">		calendar.set(Calendar.MONTH,4);</span><br><span class="line">		System.out.println(calendar.getTime());</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line">Tue Dec 14 21:20:48 CST 2021</span><br><span class="line">11</span><br><span class="line">Fri May 14 21:20:48 CST 2021</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h2 id="集合类"><a href="#集合类" class="headerlink" title="集合类"></a>集合类</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>空间自主调整，提高空间利用率，动态存储多个对象。</p>
-<p>提供不同的数据结构和算法，减少编程工作量。</p>
-<p>提高程序的处理速度和质量。</p>
-<p><strong>注意</strong>：1.集合类支持引用类型，包括包装类。</p>
-<p>2.集合类中存放的是对象的引用，而不是对象本身。</p>
-<hr>
-<p>集合类均采用<strong>泛型</strong>进行定义，分为 Collection 和 Map 两种体系</p>
-<h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><p>泛型允许类的成员的类型可以由外部程序来指定，也就是说可以以参数形式来指定类型，即“参数化类型”。常用泛型有泛型接口、泛型类、泛型方法。</p>
-<h4 id="泛型类定义"><a href="#泛型类定义" class="headerlink" title="泛型类定义"></a>泛型类定义</h4><p>class 泛型类名&lt;类型参数表列&gt;{//类体}</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public class ArrayList&lt;E&gt; &#123; &#125; </span><br></pre></td></tr></table></figure>
-
-<h4 id="泛型接口定义"><a href="#泛型接口定义" class="headerlink" title="泛型接口定义"></a>泛型接口定义</h4><p>interface 接口名&lt;类型参数表列&gt;{}</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public interface List&lt;E&gt;&#123; &#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="泛型方法定义"><a href="#泛型方法定义" class="headerlink" title="泛型方法定义"></a>泛型方法定义</h4><p>[&lt;泛型参数&gt;] 方法类型 方法名([泛型参数]){}</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public boolean add(E e)&#123; &#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="Collection接口"><a href="#Collection接口" class="headerlink" title="Collection接口"></a>Collection接口</h3><p>List：元素<strong>有序</strong>，<strong>可重复</strong>的集合</p>
-<p>Set：元素<strong>无序</strong>、<strong>不可重复</strong>的集合</p>
-<p>Collection 接口是 List、Set 接口的父接口，该接口里定义的方法既可用于操作 Set 集合，也可用于操作 List 集合。</p>
-<h4 id="Collection接口方法"><a href="#Collection接口方法" class="headerlink" title="Collection接口方法"></a>Collection接口方法</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">方法名</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">void</td>
-<td align="center">clear()</td>
-<td align="center">删除当前集合中的所有元素</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">contains(Object o)</td>
-<td align="center">查找当前集合中是否有指定元素</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">containsAll(Collection c)</td>
-<td align="center">查找当前集合中是否包含指定集合中的所有元素</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">isEmpty()</td>
-<td align="center">当前集合是否为空</td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center">size()</td>
-<td align="center">返回当前集合的元素个数</td>
-</tr>
-<tr>
-<td align="center">Iterator</td>
-<td align="center">iterator()</td>
-<td align="center">返回一个可遍历当前集合的迭代器</td>
-</tr>
-<tr>
-<td align="center">Object[]</td>
-<td align="center">toArray()</td>
-<td align="center">返回一个当前集合所有元素的数组</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">add(E e)</td>
-<td align="center">向集合中添加新元素</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">addAll(Collection c)</td>
-<td align="center">将指定集合中的所有元素添加到当前集合中</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">remove(Object o)</td>
-<td align="center">删除当前集合中包含的指定元素</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">removeAll(Collection c)</td>
-<td align="center">删除当前集合中与指定集合相同的所有元素</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">retainAll(Collection c)</td>
-<td align="center">保留当前集合中与指定集合相同的所有元素</td>
-</tr>
-</tbody></table>
-<h3 id="Map接口"><a href="#Map接口" class="headerlink" title="Map接口"></a>Map接口</h3><p>具有映射关系“key-value对”的集合</p>
-<hr>
-<h2 id="List集合"><a href="#List集合" class="headerlink" title="List集合"></a>List集合</h2><h4 id="List接口"><a href="#List接口" class="headerlink" title="List接口"></a>List接口</h4><p>List集合接口，也称之为线性表，是一个<strong>有序列表</strong>。</p>
-<p>集合中的元素是顺序存储，可以通过下标访问。</p>
-<p>List集合中<strong>允许出现重复元素</strong>。</p>
-<p>实现List集合接口的常用类：ArrayList、LinkedList、Vector和Stack</p>
-<h4 id="主要方法"><a href="#主要方法" class="headerlink" title="主要方法"></a>主要方法</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">方法名</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">boolean</td>
-<td align="center">add(E e)</td>
-<td align="center">把元素e加到表的尾部</td>
-</tr>
-<tr>
-<td align="center">void</td>
-<td align="center">add(int index,E e)</td>
-<td align="center">把元素e加到表的index位置，原位置元素后移</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">equals(Object obj)</td>
-<td align="center">比较对象o是否与表中的元素是同一元素</td>
-</tr>
-<tr>
-<td align="center">E</td>
-<td align="center">get(int index)</td>
-<td align="center">得到表中index位置的元素</td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center">indexOf(Object o)</td>
-<td align="center">判断元素o是否存在，若不则返回-1</td>
-</tr>
-<tr>
-<td align="center">Iteratot<E></E></td>
-<td align="center">iterator()</td>
-<td align="center">获得表的遍历器</td>
-</tr>
-<tr>
-<td align="center">E</td>
-<td align="center">set(int index,E e)</td>
-<td align="center">修改位置上的元素</td>
-</tr>
-</tbody></table>
-<h3 id="ArrayList集合类"><a href="#ArrayList集合类" class="headerlink" title="ArrayList集合类"></a>ArrayList集合类</h3><p>使用数组方式实现List接口</p>
-<p>检索效率很高</p>
-<p>删除效率很低</p>
-<p>即数据结构的顺序表</p>
-<h4 id="主要方法-1"><a href="#主要方法-1" class="headerlink" title="主要方法"></a>主要方法</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">方法名</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="center">ArrayList()</td>
-<td align="center">构造一个初始容量为10的空列表</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">ArrayList(Collection c)</td>
-<td align="center">构造一个包含指定collectiong的元素列表</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">ArrayList(int capacity)</td>
-<td align="center">构造一个具有指定初始容量的空列表</td>
-</tr>
-<tr>
-<td align="center">Boolean</td>
-<td align="center">add(E e)</td>
-<td align="center">把元素e加到表的尾部</td>
-</tr>
-<tr>
-<td align="center">E</td>
-<td align="center">get(int index)</td>
-<td align="center">得到表中index位置的元素</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">indexOf(Object o)</td>
-<td align="center">判断元素o是否存在，若不则返回-1</td>
-</tr>
-<tr>
-<td align="center">Iterator<E></E></td>
-<td align="center">iterator</td>
-<td align="center">获得表的遍历器</td>
-</tr>
-</tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		ArrayList&lt;Integer&gt; list =new ArrayList&lt;Integer&gt;();</span><br><span class="line">		  list.add(1);</span><br><span class="line">		  list.add(3);</span><br><span class="line">		  list.add(5);</span><br><span class="line">		  list.add(7);</span><br><span class="line">		  for (int i=0;i&lt;list.size();i++)&#123;</span><br><span class="line">		      System.out.print(list.get(i)+&quot;,&quot;);</span><br><span class="line">		  &#125;</span><br><span class="line">		  System.out.println();</span><br><span class="line">		  list.remove(0);</span><br><span class="line">		  System.out.println(&quot;The second item = &quot; + list.get(1));</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line">1，3，5，7</span><br><span class="line">The seconditem = 5</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="LinkedList集合类"><a href="#LinkedList集合类" class="headerlink" title="LinkedList集合类"></a>LinkedList集合类</h3><p>使用<strong>双向</strong>链表方式实现List接口，以及队列Deque接口</p>
-<p>删除效率很高</p>
-<p>检索效率很低</p>
-<p>表示线性序列表，也可以表示堆栈使用，还可以当做队列使用。</p>
-<h4 id="主要方法-2"><a href="#主要方法-2" class="headerlink" title="主要方法"></a>主要方法</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">方法名</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="center">LinkedList()</td>
-<td align="center">构造一个初始容量为 10 的空列表</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">LinkedList(Collection c)</td>
-<td align="center">构造一个包含指定 collection 的元素的列表</td>
-</tr>
-<tr>
-<td align="center">void</td>
-<td align="center">aa(int index,E element)</td>
-<td align="center">把元素e插入到列表index所指位置，并依次后移</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">add(E e)</td>
-<td align="center">把元素e加到表的尾部</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">indexOf(Object o)</td>
-<td align="center">判断元素o在表中是否存在。若不存在，则返回-1</td>
-</tr>
-<tr>
-<td align="center">void</td>
-<td align="center">addFirst(E e)</td>
-<td align="center">将元素e插入到列表的头部</td>
-</tr>
-<tr>
-<td align="center">E</td>
-<td align="center">getFirst()</td>
-<td align="center">返回列表的头部元素</td>
-</tr>
-<tr>
-<td align="center">E</td>
-<td align="center">removeFirst</td>
-<td align="center">从列表中删除头部元素并返回该元素</td>
-</tr>
-<tr>
-<td align="center">E</td>
-<td align="center">pop()</td>
-<td align="center">栈顶元素出栈</td>
-</tr>
-<tr>
-<td align="center">void</td>
-<td align="center">push(E e)</td>
-<td align="center">元素e入栈</td>
-</tr>
-</tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.LinkedList;</span><br><span class="line">import java.util.Scanner;</span><br><span class="line">public class Main &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		LinkedList&lt;String&gt; list = new LinkedList&lt;String&gt;();</span><br><span class="line">		list.add(&quot;A&quot;);</span><br><span class="line">		list.add(&quot;B&quot;);</span><br><span class="line">		list.add(&quot;C&quot;);</span><br><span class="line">		list.add(&quot;D&quot;);</span><br><span class="line">		list.remove(&quot;C&quot;);</span><br><span class="line">		list.addFirst(&quot;E&quot;);</span><br><span class="line">		for(String s : list) &#123;</span><br><span class="line">		    System.out.println(s);</span><br><span class="line">		 &#125;//foreach遍历</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line">E</span><br><span class="line">A</span><br><span class="line">B</span><br><span class="line">D</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="Vector集合类"><a href="#Vector集合类" class="headerlink" title="Vector集合类"></a>Vector集合类</h3><p>是一种<strong>动态</strong>数组，元素只能是对象</p>
-<p>对象类型可以不同</p>
-<p>与ArrayList、LinkedList相比，<strong>线程安全</strong></p>
-<p>通过<strong>synchronized</strong>关键字修饰方法，实现线程安全</p>
-<table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">方法名</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="center">Vector()</td>
-<td align="center">构造一个初始容量为 10 的空列表</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center">Vector(Collection c)</td>
-<td align="center">构造一个包含指定 collection 的元素的列表</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">add(E e)</td>
-<td align="center">把元素e加到表的尾部</td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center">indexOf(Object o)</td>
-<td align="center">判断元素o在表中是否存在。若不存在，则返回-1</td>
-</tr>
-<tr>
-<td align="center">synchronized void</td>
-<td align="center">addElement(E obj)</td>
-<td align="center">将元素e同步插入到列表的尾部</td>
-</tr>
-<tr>
-<td align="center">synchronized void</td>
-<td align="center">removeElement(Object obj)</td>
-<td align="center">同步删除元素obj</td>
-</tr>
-<tr>
-<td align="center">synchronized void</td>
-<td align="center">insertElementAt(E obj,int index)</td>
-<td align="center">在index位置同步插入元素obj</td>
-</tr>
-<tr>
-<td align="center">synchronized void</td>
-<td align="center">firstElement()</td>
-<td align="center">同步返回第一个元素</td>
-</tr>
-</tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.LinkedList;</span><br><span class="line">import java.util.Scanner;</span><br><span class="line">import java.util.Vector;</span><br><span class="line">public class Main &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		Vector v = new Vector();</span><br><span class="line">		v.add(&quot;Hello&quot;);</span><br><span class="line">		v.add(&quot;JDK&quot;);</span><br><span class="line">		v.addElement(8.0);</span><br><span class="line">		        </span><br><span class="line">		for(int i = 0; i &lt; v.size();i++)&#123;</span><br><span class="line">		    System.out.println(v.get(i));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line">Hello</span><br><span class="line">JDK</span><br><span class="line">8.0</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="Set集合"><a href="#Set集合" class="headerlink" title="Set集合"></a>Set集合</h2><p>Set集合中元素<strong>无序，不重复</strong></p>
-<p>方法与Collection相同</p>
-<p>实现Set集合接口的类：HashSet、TreeSet</p>
-<hr>
-<h4 id="主要方法-3"><a href="#主要方法-3" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/Java%E7%B1%BB/1.png" class="lazyload" data-srcset="/Java%E7%B1%BB/1.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="markdown"></p>
-<hr>
-<h3 id="HashSet集合类"><a href="#HashSet集合类" class="headerlink" title="HashSet集合类"></a>HashSet集合类</h3><p>集合中元素<strong>无序</strong></p>
-<p>元素<strong>不重复</strong></p>
-<p>元素<strong>值</strong>可以为<strong>空（null）</strong></p>
-<p>存储每个元素时会生成一个唯一的整数标识——<strong>散列码</strong>（hash code），HashSet根据散列码来决定元素所在的存储位置</p>
-<hr>
-<h4 id="主要方法-4"><a href="#主要方法-4" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/Java%E7%B1%BB/2.png" class="lazyload" data-srcset="/Java%E7%B1%BB/2.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="markdown"></p>
-<hr>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import java.util.HashSet;</span><br><span class="line">import java.util.Iterator;</span><br><span class="line">public class Main &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		HashSet&lt;String&gt; set = new HashSet&lt;String&gt;();</span><br><span class="line">		set.add(&quot;one&quot;);</span><br><span class="line">		set.add(&quot;two&quot;);</span><br><span class="line">		set.add(&quot;tree&quot;);</span><br><span class="line">		set.add(&quot;one&quot;);//set中存放one,two,three,且无序不重复</span><br><span class="line">		System.out.println(set.size());</span><br><span class="line">		Iterator&lt;String&gt; iterator = set.iterator();</span><br><span class="line">		while(iterator.hasNext())&#123;</span><br><span class="line">		    System.out.println(iterator.next());</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line">3</span><br><span class="line">one</span><br><span class="line">tree</span><br><span class="line">two</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="TreeSet集合类"><a href="#TreeSet集合类" class="headerlink" title="TreeSet集合类"></a>TreeSet集合类</h3><p>集合中元素<strong>有序</strong>：采用<strong>二叉搜索树</strong>的数据结构进行元素的存储，按照树形层次排列，会按其存放的数据的“大小”顺序一层一层地依次排列</p>
-<p>元素<strong>不重复</strong></p>
-<p>存储的元素类型必须是<strong>可排序</strong>的</p>
-<hr>
-<h4 id="主要方法-5"><a href="#主要方法-5" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/Java%E7%B1%BB/3.png" class="lazyload" data-srcset="/Java%E7%B1%BB/3.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="markdown"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Iterator;</span><br><span class="line">import java.util.TreeSet;</span><br><span class="line">public class Main &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		TreeSet&lt;String&gt; treeSet = new TreeSet&lt;String&gt;();</span><br><span class="line">		treeSet.add(&quot;banana&quot;);</span><br><span class="line">		treeSet.add(&quot;peach&quot;);</span><br><span class="line">		treeSet.add(&quot;pineapple&quot;);</span><br><span class="line">		treeSet.add(&quot;apple&quot;);</span><br><span class="line">				  </span><br><span class="line">		System.out.println(treeSet.first());</span><br><span class="line">		System.out.println(treeSet.last());</span><br><span class="line">		Iterator&lt;String&gt; iterator = treeSet.iterator();</span><br><span class="line">		while(iterator.hasNext())&#123;</span><br><span class="line">		   System.out.println(iterator.next());</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line">apple</span><br><span class="line">pineapple</span><br><span class="line">apple</span><br><span class="line">banana</span><br><span class="line">peach</span><br><span class="line">pineapple</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="Map集合"><a href="#Map集合" class="headerlink" title="Map集合"></a>Map集合</h2><p>用于存放一组成对的<strong>“键值对”</strong>对象</p>
-<p>每个元素包括两部分：<strong>键（key）</strong>、<strong>值（value）</strong></p>
-<p><strong>键（key）不能重复</strong>，<strong>值（value）可以重复</strong></p>
-<p>实现Set集合接口的类：HashMap、HashTree、HashTable</p>
-<hr>
-<h4 id="主要方法-6"><a href="#主要方法-6" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/Java%E7%B1%BB/4.png" class="lazyload" data-srcset="/Java%E7%B1%BB/4.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="markdown"></p>
-<p><img src="/Java%E7%B1%BB/5.png" class="lazyload" data-srcset="/Java%E7%B1%BB/5.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="markdown"></p>
-<hr>
-<h3 id="HashMap集合类"><a href="#HashMap集合类" class="headerlink" title="HashMap集合类"></a>HashMap集合类</h3><p>采用散列表数据结构存储数据</p>
-<p>key-value存储</p>
-<p>键（key）不能重复，值（value）可以重复</p>
-<h4 id="主要方法-7"><a href="#主要方法-7" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/Java%E7%B1%BB/6.png" class="lazyload" data-srcset="/Java%E7%B1%BB/6.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="markdown"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
 <h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><hr>
 <h2 id="系统类"><a href="#系统类" class="headerlink" title="系统类"></a>系统类</h2><hr>
 <h2 id="其他常用类"><a href="#其他常用类" class="headerlink" title="其他常用类"></a>其他常用类</h2>
@@ -1217,7 +862,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/2021/12/14/%E5%AD%A6%E4%B9%A0Java%E7%B1%BB/>http://example.com/2021/12/14/%E5%AD%A6%E4%B9%A0Java%E7%B1%BB/</a></p>
+                <p>本文永久链接是：<a href=http://example.com/2021/12/14/Java%E7%B1%BB/>http://example.com/2021/12/14/Java%E7%B1%BB/</a></p>
               
             
           </blockquote>
@@ -1234,10 +879,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-12-15T11:23:45+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-12-14T21:52:51+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 15, 2021</p>
+    <p>更新于：Dec 14, 2021</p>
   </a>
 </div>
 
@@ -1245,9 +890,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div>
-
 
         
       
@@ -1259,7 +901,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/12/14/%E5%AD%A6%E4%B9%A0Java%E7%B1%BB/&title=Java类 - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/12/14/Java%E7%B1%BB/&title=学习Java类 - Hexo&summary="
           
           >
           
@@ -1271,7 +913,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/12/14/%E5%AD%A6%E4%B9%A0Java%E7%B1%BB/&title=Java类 - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/12/14/Java%E7%B1%BB/&title=学习Java类 - Hexo&summary="
           
           >
           
@@ -1283,7 +925,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/12/14/%E5%AD%A6%E4%B9%A0Java%E7%B1%BB/&title=Java类 - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/12/14/Java%E7%B1%BB/&title=学习Java类 - Hexo&summary="
           
           >
           
@@ -1313,15 +955,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-      
-        <a class='next' href='/2021/12/14/Java%E7%B1%BB/'>
-          <p class='title'>学习Java类<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>字符串类字符串处理的类String，StringBuffer
+        <a class='prev' href='/2021/12/14/%E5%AD%A6%E4%B9%A0Java%E7%B1%BB/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Java类</p>
+          <p class='content'>Java类字符串类字符串处理的类String，StringBuffer
 SringTokenizer
 StringBuilder
 StreamTokenozer
 
-String类String类定义的字符串...</p>
+String类String类定...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/12/13/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/'>
+          <p class='title'>卡尔曼滤波<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>卡尔曼滤波滤波例如测量声波或者电波，我们想要获得一条平滑稳定的曲线，实际是多少就是多少。不过可能因为仪器比较便宜拉跨和其他误差影响得到的是波动的曲线。
+滤波是__求均值__的一种方式，通过滤波过...</p>
         </a>
       
     </div>
@@ -1364,7 +1012,7 @@ String类String类定义的字符串...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB"><span class="toc-text">字符串类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E7%9A%84%E7%B1%BB"><span class="toc-text">字符串处理的类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String%E7%B1%BB"><span class="toc-text">String类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String%E5%AF%B9%E8%B1%A1%E6%98%AF%E4%B8%8D%E5%8F%AF%E5%8F%98%E7%9A%84"><span class="toc-text">String对象是不可变的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String%E7%B1%BB%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">String类常用方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringBuffer"><span class="toc-text">StringBuffer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringBuffer%E7%B1%BB%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">StringBuffer类常用方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringBuilder"><span class="toc-text">StringBuilder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String%E4%B8%8EStringBuffer%E6%AF%94%E8%BE%83"><span class="toc-text">String与StringBuffer比较</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E4%B8%8D%E5%90%8C"><span class="toc-text">构造方法不同</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%90%E5%91%98%E6%96%B9%E6%B3%95%E4%B8%8D%E5%90%8C"><span class="toc-text">成员方法不同</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringTokenizer%E7%B1%BB"><span class="toc-text">StringTokenizer类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95"><span class="toc-text">构造方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E7%B1%BB"><span class="toc-text">数学类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Math"><span class="toc-text">Math</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Random"><span class="toc-text">Random</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date%E7%B1%BB"><span class="toc-text">Date类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">常用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Calendar%E7%B1%BB"><span class="toc-text">Calendar类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95-1"><span class="toc-text">常用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-text">日期格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95-2"><span class="toc-text">常用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E7%B1%BB"><span class="toc-text">集合类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-text">特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B"><span class="toc-text">泛型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E7%B1%BB%E5%AE%9A%E4%B9%89"><span class="toc-text">泛型类定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E6%8E%A5%E5%8F%A3%E5%AE%9A%E4%B9%89"><span class="toc-text">泛型接口定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E6%96%B9%E6%B3%95%E5%AE%9A%E4%B9%89"><span class="toc-text">泛型方法定义</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Collection%E6%8E%A5%E5%8F%A3"><span class="toc-text">Collection接口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Collection%E6%8E%A5%E5%8F%A3%E6%96%B9%E6%B3%95"><span class="toc-text">Collection接口方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Map%E6%8E%A5%E5%8F%A3"><span class="toc-text">Map接口</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#List%E9%9B%86%E5%90%88"><span class="toc-text">List集合</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#List%E6%8E%A5%E5%8F%A3"><span class="toc-text">List接口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95"><span class="toc-text">主要方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ArrayList%E9%9B%86%E5%90%88%E7%B1%BB"><span class="toc-text">ArrayList集合类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95-1"><span class="toc-text">主要方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LinkedList%E9%9B%86%E5%90%88%E7%B1%BB"><span class="toc-text">LinkedList集合类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95-2"><span class="toc-text">主要方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vector%E9%9B%86%E5%90%88%E7%B1%BB"><span class="toc-text">Vector集合类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Set%E9%9B%86%E5%90%88"><span class="toc-text">Set集合</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95-3"><span class="toc-text">主要方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HashSet%E9%9B%86%E5%90%88%E7%B1%BB"><span class="toc-text">HashSet集合类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95-4"><span class="toc-text">主要方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TreeSet%E9%9B%86%E5%90%88%E7%B1%BB"><span class="toc-text">TreeSet集合类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95-5"><span class="toc-text">主要方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Map%E9%9B%86%E5%90%88"><span class="toc-text">Map集合</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95-6"><span class="toc-text">主要方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HashMap%E9%9B%86%E5%90%88%E7%B1%BB"><span class="toc-text">HashMap集合类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95-7"><span class="toc-text">主要方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%85%E8%A3%85%E7%B1%BB"><span class="toc-text">包装类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%B1%BB"><span class="toc-text">系统类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E7%B1%BB"><span class="toc-text">其他常用类</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E7%9A%84%E7%B1%BB"><span class="toc-text">字符串处理的类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String%E7%B1%BB"><span class="toc-text">String类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String%E5%AF%B9%E8%B1%A1%E6%98%AF%E4%B8%8D%E5%8F%AF%E5%8F%98%E7%9A%84"><span class="toc-text">String对象是不可变的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String%E7%B1%BB%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">String类常用方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringBuffer"><span class="toc-text">StringBuffer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringBuffer%E7%B1%BB%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">StringBuffer类常用方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringBuilder"><span class="toc-text">StringBuilder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String%E4%B8%8EStringBuffer%E6%AF%94%E8%BE%83"><span class="toc-text">String与StringBuffer比较</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E4%B8%8D%E5%90%8C"><span class="toc-text">构造方法不同</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%90%E5%91%98%E6%96%B9%E6%B3%95%E4%B8%8D%E5%90%8C"><span class="toc-text">成员方法不同</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#StringTokenizer%E7%B1%BB"><span class="toc-text">StringTokenizer类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95"><span class="toc-text">构造方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E7%B1%BB"><span class="toc-text">数学类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Math"><span class="toc-text">Math</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Random"><span class="toc-text">Random</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date%E7%B1%BB"><span class="toc-text">Date类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">常用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Calendar%E7%B1%BB"><span class="toc-text">Calendar类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95-1"><span class="toc-text">常用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-text">日期格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95-2"><span class="toc-text">常用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%85%E8%A3%85%E7%B1%BB"><span class="toc-text">包装类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%B1%BB"><span class="toc-text">系统类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E7%B1%BB"><span class="toc-text">其他常用类</span></a>
     </div>
   </section>
 
@@ -1383,7 +1031,7 @@ String类String类定义的字符串...</p>
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="Java类";
+  pdata.postTitle="学习Java类";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

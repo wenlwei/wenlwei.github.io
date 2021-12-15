@@ -24,7 +24,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive: 2021 - Hexo</title>
+  <title>Tag: java - Hexo</title>
   
 
   
@@ -104,7 +104,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -355,7 +355,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper  dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -430,18 +430,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
+
 <div class='l_main'>
-	
-		
+  
+    
+      
   <section class="post-list">
     
       
-        
-          
-        
-          
-        
-          
         
           
         
@@ -500,150 +496,6 @@ String类中提供更改对象内容的方法并未真正更改内容，而是�
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/12/14/Java%E7%B1%BB/">
-        学习Java类
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        字符串类字符串处理的类String，StringBuffer
-SringTokenizer
-StringBuilder
-StreamTokenozer
-
-String类String类定义的字符串是不可变长的。
-String类是final类，是不可改变的，所以其创建对象的值无法改变。
-String类中提供更改对象内容的方法并未真正更改内容，而是创建一个新的对象并返回。
-字符串常量存储在常量池中...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-12-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/12/14/Java%E7%B1%BB/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/12/13/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/">
-        卡尔曼滤波
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        卡尔曼滤波滤波例如测量声波或者电波，我们想要获得一条平滑稳定的曲线，实际是多少就是多少。不过可能因为仪器比较便宜拉跨和其他误差影响得到的是波动的曲线。
-滤波是__求均值__的一种方式，通过滤波过滤掉噪声值，可以使得曲线变得平滑，更趋近真实值
-
-
-适用系统线性系统1.叠加性
-f(a+b)=f(a)+f(b)
-假设y对应输出，x对应输入。对于同一个系统，y=$x_1$+$x_2$等价与y=$y_...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-12-13</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/12/13/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/12/13/hello-world/">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-12-13</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/12/13/hello-world/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -651,7 +503,8 @@ Qu...
   
 
 
-	
+    
+  
 </div>
 <aside class='l_side'>
   
@@ -793,14 +646,14 @@ Qu...
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
