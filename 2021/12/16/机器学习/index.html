@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive: 2021 - Hexo</title>
+  <title>机器学习 - Hexo</title>
   
 
   
@@ -104,7 +102,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -355,7 +353,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -431,229 +429,275 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
     
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
     
-    <h2 class="article-title" >
-      <a href="/2021/12/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+      <h1 class="title">
         机器学习
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        机器学习机器学习基础什么是机器学习？
-通过对信息的统计来利用信息建立模型然后使用模型预测的方法。即将大量的数据转换成有用的信息。
-为什么要进行机器学习？
-机器学习的主要任务：回归，分类
-分类：将实例数据进行合适分类
-回归：主要用于预测数值型数据
-训练集：拥有已大量分类的数据，是用于训练机器学习算法的数据样本集合
-目标变量：是机器学习算法的预测结果，分类算法中目标变量通常是标称型，回归算法中通...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      </h1>
+      <div class='new-meta-box'>
         
-        <time>2021-12-16</time>
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Dec 16, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="机器学习" data-path="/2021/12/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><h2 id="机器学习基础"><a href="#机器学习基础" class="headerlink" title="机器学习基础"></a>机器学习基础</h2><p>什么是机器学习？</p>
+<p>通过对信息的统计来利用信息建立模型然后使用模型预测的方法。即将大量的数据转换成有用的信息。</p>
+<p><del>为什么要进行机器学习？</del></p>
+<p>机器学习的<strong>主要任务</strong>：<strong>回归</strong>，<strong>分类</strong></p>
+<p><strong>分类</strong>：将实例数据进行合适分类</p>
+<p><strong>回归</strong>：主要用于预测数值型数据</p>
+<p><strong>训练集</strong>：拥有已大量分类的数据，是用于训练机器学习算法的数据样本集合</p>
+<p><strong>目标变量</strong>：是机器学习算法的预测结果，<strong>分类算法</strong>中目标变量通常是<strong>标称型</strong>，<strong>回归算法</strong>中通常是<strong>连续型</strong></p>
+<p><strong>注意</strong>：<strong>特征或属性</strong>通常是训练样本集的列，是独立测量得到的结果，<strong>多个</strong>特征联系在一起共同组成一个训练样本</p>
+<p><strong>训练数据</strong>：机器学习<strong>开始</strong>时作为算法输入的训练样本集</p>
+<p><strong>测试数据</strong>：训练<strong>完成</strong>后输入的训练样本集</p>
+<p><strong>注</strong>：测试样本时不提供目标变量，由程序决定</p>
+<p>分类和回归都称为<strong>监督学习</strong>，这类算法必须知道要预测什么，即目标变量的分类信息</p>
+<p><strong>无监督学习</strong>即数据没有类别信息，也不给定目标值</p>
+<p><strong>聚类</strong>：无监督学习中，将数据集合分成类似的对象组成的多个类的过程</p>
+<p><strong>密度估计</strong>：寻找描述数据统计值的过程</p>
+<p>无监督学习可以减少数据特征的维度</p>
+<table>
+<thead>
+<tr>
+<th align="center">监督学习的用途</th>
+<th align="center">无监督学习的用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">k-近邻算法</td>
+<td align="center">K-均值</td>
+</tr>
+<tr>
+<td align="center">朴素贝叶斯算法</td>
+<td align="center">DBSCAN</td>
+</tr>
+<tr>
+<td align="center">支持向量机</td>
+<td align="center">最大期望算法</td>
+</tr>
+<tr>
+<td align="center">决策树</td>
+<td align="center">Parzem窗设计</td>
+</tr>
+<tr>
+<td align="center">线性回归</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">局部加权线性回归</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ridge回归</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Lasso最小回归系数估计</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="怎样选择算法"><a href="#怎样选择算法" class="headerlink" title="怎样选择算法"></a>怎样选择算法</h2><p>使用机器学习算法的目的，想要算法完成何种任务</p>
+<p>需要分析或收集的数据是什么</p>
+<p>例如监督学习</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">opl1=&gt;operation: 考虑使用机器学习算法的目的</span><br><span class="line">opl2=&gt;operation: 需要预测目标变量的值</span><br><span class="line">opl3=&gt;operation: 目标变量是否离散型</span><br><span class="line">c=&gt;condition: yes or no</span><br><span class="line">opl4=&gt;operation: 分类算法</span><br><span class="line">opl5=&gt;operation: 回归算法</span><br><span class="line">e=&gt;end: 结束</span><br><span class="line">st(right)-&gt;opl1</span><br><span class="line">opl1(right)-&gt;opl2</span><br><span class="line">opl2(bottom)-&gt;opl3</span><br><span class="line">opl3(bottom)-&gt;c</span><br><span class="line">c(yes,right)-&gt;opl4</span><br></pre></td></tr></table></figure>
+
+
+
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/12/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/12/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/>http://example.com/2021/12/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-12-16T22:51:39+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Dec 16, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">
-        如何搭建hexo博客
-      </a>
-    </h2>
-  
-  <div class='md'>
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        搭建环境安装git这个可以在软件商店安装
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/12/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/&title=机器学习 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/12/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/&title=机器学习 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/12/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/&title=机器学习 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/'>
+          <p class='title'>如何搭建hexo博客<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>搭建环境安装git这个可以在软件商店安装
 配置环境打开git Bash
 分别执行
 git config –global user.name “你的用户名”
-git config –global user.email “你的注册邮箱”
-检查是否正确
-git config user.name
-git config user.email
-
-执行ssh-keygen -t rsa -C “你的用户名...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-12-15</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/'>
-            Read More
-          </a>
-        </div>
+git config –global ...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/12/14/Java%E7%B1%BB/">
-        Java类
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Java类字符串类字符串处理的类String，StringBuffer
-SringTokenizer
-StringBuilder
-StreamTokenozer
-
-String类String类定义的字符串是不可变长的。
-String类是final类，是不可改变的，所以其创建对象的值无法改变。
-String类中提供更改对象内容的方法并未真正更改内容，而是创建一个新的对象并返回。
-字符串常量存储...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-12-14</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/12/14/Java%E7%B1%BB/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/12/13/hello-world/">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-12-13</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/12/13/hello-world/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -661,125 +705,28 @@ Qu...
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/java/" style="font-size: 14px; color: #999">java</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80"><span class="toc-text">机器学习基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%8E%E6%A0%B7%E9%80%89%E6%8B%A9%E7%AE%97%E6%B3%95"><span class="toc-text">怎样选择算法</span></a></li></ol>
     </div>
   </section>
 
 
   
 
-  
-    
-    
-
-<section class="widget qrcode shadow desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
-
-  
-
 
 </aside>
+
 
 
 		  
@@ -788,21 +735,21 @@ Qu...
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="机器学习";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
