@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Tag: java - Hexo</title>
+  <title>日撸Java2 - Hexo</title>
   
 
   
@@ -355,7 +353,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -430,81 +428,218 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
+    
+      <h1 class="title">
+        日撸Java2
+      </h1>
+      <div class='new-meta-box'>
         
           
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/12/14/Java%E7%B1%BB/">
-        Java类
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Java类字符串类字符串处理的类String，StringBuffer
-SringTokenizer
-StringBuilder
-StreamTokenozer
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
 
-String类String类定义的字符串是不可变长的。
-String类是final类，是不可改变的，所以其创建对象的值无法改变。
-String类中提供更改对象内容的方法并未真正更改内容，而是创建一个新的对象并返回。
-字符串常量存储...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+          
         
-        <time>2021-12-14</time>
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Dec 20, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="日撸Java2" data-path="/2021/12/20/%E6%97%A5%E6%92%B8Java2/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h1 id="线性数据结构"><a href="#线性数据结构" class="headerlink" title="线性数据结构"></a>线性数据结构</h1><h2 id="第三天"><a href="#第三天" class="headerlink" title="第三天"></a>第三天</h2><h3 id="顺序表"><a href="#顺序表" class="headerlink" title="顺序表"></a>顺序表</h3><p>1.创建一个空表</p>
+<p>2.给空表赋值</p>
+<p>3.将表中的值赋给字符串</p>
+<p>4.清空表中元素</p>
+<p>5.查找给定元素所处的位置. 找不到就返回 -1.<br>6.在给定位置增加元素. 如果顺序表已满, 或位置不在已有位置范围之内, 就拒绝增加.<br>7.删除指定位置的元素. 要处理给定位置不合法的情况. 该位置必须是已经有数据的.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Sequential list.</span><br><span class="line"> * </span><br><span class="line"> * @author Lenovo.</span><br><span class="line"> */</span><br><span class="line">public class SequentialList &#123;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * The maximal length of the list. It is a constant.</span><br><span class="line">	 */</span><br><span class="line">	public static final int MAX_LENGTH = 10;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * The actual length not exceeding MAX_LENGTH. Attention: length is not only</span><br><span class="line">	 * the member variable of Sequential list, but also the member variable of</span><br><span class="line">	 * Array. In fact, a name can be the member variable of different classes.</span><br><span class="line">	 */</span><br><span class="line">	int length;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 * The data stored in an array.</span><br><span class="line">	 */</span><br><span class="line">	int[] data;</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 *********************</span><br><span class="line">	 * Construct an empty sequential list.</span><br><span class="line">	 *********************</span><br><span class="line">	 */</span><br><span class="line">	public SequentialList() &#123;</span><br><span class="line">		length = 0;</span><br><span class="line">		data = new int[MAX_LENGTH];</span><br><span class="line">	&#125;// Of the first constructor</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 *********************</span><br><span class="line">	 * Construct a sequential list using an array.</span><br><span class="line">	 * </span><br><span class="line">	 * @param paraArray</span><br><span class="line">	 *            The given array. Its length should not exceed MAX_LENGTH. For</span><br><span class="line">	 *            simplicity now we do not check it.</span><br><span class="line">	 *********************</span><br><span class="line">	 */</span><br><span class="line">	public SequentialList(int[] paraArray) &#123;</span><br><span class="line">		data = new int[MAX_LENGTH];</span><br><span class="line">		length = paraArray.length;</span><br><span class="line"></span><br><span class="line">		// Copy data.</span><br><span class="line">		for (int i = 0; i &lt; paraArray.length; i++) &#123;</span><br><span class="line">			data[i] = paraArray[i];</span><br><span class="line">		&#125; // Of for i</span><br><span class="line">	&#125;// Of the second constructor</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 *********************</span><br><span class="line">	 * Overrides the method claimed in Object, the superclass of any class.</span><br><span class="line">	 *********************</span><br><span class="line">	 */</span><br><span class="line">	public String toString() &#123;</span><br><span class="line">		String resultString = &quot;&quot;;</span><br><span class="line"></span><br><span class="line">		if (length == 0) &#123;</span><br><span class="line">			return &quot;empty&quot;;</span><br><span class="line">		&#125; // Of if</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; length - 1; i++) &#123;</span><br><span class="line">			resultString += data[i] + &quot;, &quot;;</span><br><span class="line">		&#125; // Of for i</span><br><span class="line"></span><br><span class="line">		resultString += data[length - 1];</span><br><span class="line"></span><br><span class="line">		return resultString;</span><br><span class="line">	&#125;// Of toString</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 *********************</span><br><span class="line">	 * Reset to empty.</span><br><span class="line">	 *********************</span><br><span class="line">	 */</span><br><span class="line">	public void reset() &#123;</span><br><span class="line">		length = 0;</span><br><span class="line">	&#125;// Of reset</span><br><span class="line"></span><br><span class="line">	/**</span><br><span class="line">	 *********************</span><br><span class="line">	 * The entrance of the program.</span><br><span class="line">	 * </span><br><span class="line">	 * @param args</span><br><span class="line">	 *            Not used now.</span><br><span class="line">	 *********************</span><br><span class="line">	 */</span><br><span class="line">	/**</span><br><span class="line">	    *********************</span><br><span class="line">	    * Find the index of the given value. If it appears in multiple positions,</span><br><span class="line">	    * simply return the first one.</span><br><span class="line">	    * </span><br><span class="line">	    * @param paraValue The given value.</span><br><span class="line">	    * @return The position. -1 for not found.</span><br><span class="line">	    *********************</span><br><span class="line">	    */</span><br><span class="line">	   public int indexOf(int paraValue) &#123;</span><br><span class="line">	   	int tempPosition = -1;</span><br><span class="line"></span><br><span class="line">	   	for (int i = 0; i &lt; length; i++) &#123;</span><br><span class="line">	   		if (data[i] == paraValue) &#123;</span><br><span class="line">	   			tempPosition = i;</span><br><span class="line">	   			break;</span><br><span class="line">	   		&#125; // Of if</span><br><span class="line">	   	&#125; // Of for i</span><br><span class="line"></span><br><span class="line">	   	return tempPosition;</span><br><span class="line">	   &#125;// Of indexOf</span><br><span class="line"></span><br><span class="line">	   /**</span><br><span class="line">	    *********************</span><br><span class="line">	    * Insert a value to a position. If the list is already full, do nothing.</span><br><span class="line">	    * </span><br><span class="line">	    * @param paraPosition The given position.</span><br><span class="line">	    * @param paraValue    The given value.</span><br><span class="line">	    * @return Success or not.</span><br><span class="line">	    *********************</span><br><span class="line">	    */</span><br><span class="line">	   public boolean insert(int paraPosition, int paraValue) &#123;</span><br><span class="line">	   	if (length == MAX_LENGTH) &#123;</span><br><span class="line">	   		System.out.println(&quot;List full.&quot;);</span><br><span class="line">	   		return false;</span><br><span class="line">	   	&#125; // Of if</span><br><span class="line"></span><br><span class="line">	   	if ((paraPosition &lt; 0) || (paraPosition &gt; length)) &#123;</span><br><span class="line">	   		System.out.println(&quot;The position &quot; + paraPosition + &quot; is out of bounds.&quot;);</span><br><span class="line">	   		return false;</span><br><span class="line">	   	&#125; // Of if</span><br><span class="line"></span><br><span class="line">	   	// From tail to head. The last one is moved to a new position. Because length &lt; MAX_LENGTH, no exceeding occurs.</span><br><span class="line">	   	for (int i = length; i &gt; paraPosition; i--) &#123;</span><br><span class="line">	   		data[i] = data[i - 1];</span><br><span class="line">	   	&#125; // Of for i</span><br><span class="line"></span><br><span class="line">	   	data[paraPosition] = paraValue;</span><br><span class="line">	   	length++;</span><br><span class="line"></span><br><span class="line">	   	return true;</span><br><span class="line">	   &#125;// Of insert</span><br><span class="line"></span><br><span class="line">	   /**</span><br><span class="line">	    *********************</span><br><span class="line">	    * Delete a value at a position.</span><br><span class="line">	    * </span><br><span class="line">	    * @param paraPosition The given position.</span><br><span class="line">	    * @return Success or not.</span><br><span class="line">	    *********************</span><br><span class="line">	    */</span><br><span class="line">	   public boolean delete(int paraPosition) &#123;</span><br><span class="line">	   	if ((paraPosition &lt; 0) || (paraPosition &gt;= length)) &#123;</span><br><span class="line">	   		System.out.println(&quot;The position &quot; + paraPosition + &quot; is out of bounds.&quot;);</span><br><span class="line">	   		return false;</span><br><span class="line">	   	&#125; // Of if</span><br><span class="line"></span><br><span class="line">	   	// From head to tail.</span><br><span class="line">	   	for (int i = paraPosition; i &lt; length - 1; i++) &#123;</span><br><span class="line">	   		data[i] = data[i + 1];</span><br><span class="line">	   	&#125; // Of for i</span><br><span class="line"></span><br><span class="line">	   	length--;</span><br><span class="line"></span><br><span class="line">	   	return true;</span><br><span class="line">	   &#125;// Of delete</span><br><span class="line"></span><br><span class="line">	   /**</span><br><span class="line">	    *********************</span><br><span class="line">	    * The entrance of the program.</span><br><span class="line">	    * </span><br><span class="line">	    * @param args Not used now.</span><br><span class="line">	    *********************</span><br><span class="line">	    */</span><br><span class="line">	   public static void main(String args[]) &#123;</span><br><span class="line">	   	int[] tempArray = &#123; 1, 4, 6, 9 &#125;;</span><br><span class="line">	   	SequentialList tempFirstList = new SequentialList(tempArray);</span><br><span class="line">	   	System.out.println(&quot;After initialization, the list is: &quot; + tempFirstList.toString());</span><br><span class="line">	   	System.out.println(&quot;Again, the list is: &quot; + tempFirstList);</span><br><span class="line"></span><br><span class="line">	   	int tempValue = 4;</span><br><span class="line">	   	int tempPosition = tempFirstList.indexOf(tempValue);</span><br><span class="line">	   	System.out.println(&quot;The position of &quot; + tempValue + &quot; is &quot; + tempPosition);</span><br><span class="line"></span><br><span class="line">	   	tempValue = 5;</span><br><span class="line">	   	tempPosition = tempFirstList.indexOf(tempValue);</span><br><span class="line">	   	System.out.println(&quot;The position of &quot; + tempValue + &quot; is &quot; + tempPosition);</span><br><span class="line"></span><br><span class="line">	   	tempPosition = 2;</span><br><span class="line">	   	tempValue = 5;</span><br><span class="line">	   	tempFirstList.insert(tempPosition, tempValue);</span><br><span class="line">	   	System.out.println(</span><br><span class="line">	   			&quot;After inserting &quot; + tempValue + &quot; to position &quot; + tempPosition + &quot;, the list is: &quot; + tempFirstList);</span><br><span class="line"></span><br><span class="line">	   	tempPosition = 8;</span><br><span class="line">	   	tempValue = 10;</span><br><span class="line">	   	tempFirstList.insert(tempPosition, tempValue);</span><br><span class="line">	   	System.out.println(</span><br><span class="line">	   			&quot;After inserting &quot; + tempValue + &quot; to position &quot; + tempPosition + &quot;, the list is: &quot; + tempFirstList);</span><br><span class="line"></span><br><span class="line">	   	tempPosition = 3;</span><br><span class="line">	   	tempFirstList.delete(tempPosition);</span><br><span class="line">	   	System.out.println(&quot;After deleting data at position &quot; + tempPosition + &quot;, the list is: &quot; + tempFirstList);</span><br><span class="line"></span><br><span class="line">	   	for (int i = 0; i &lt; 8; i++) &#123;</span><br><span class="line">	   		tempFirstList.insert(i, i);</span><br><span class="line">	   		System.out.println(&quot;After inserting &quot; + i + &quot; to position &quot; + i + &quot;, the list is: &quot; + tempFirstList);</span><br><span class="line">	   	&#125; // Of for i</span><br><span class="line"></span><br><span class="line">	   	tempFirstList.reset();</span><br><span class="line">	   	System.out.println(&quot;After reset, the list is: &quot; + tempFirstList);</span><br><span class="line">	   &#125;// Of main</span><br><span class="line">	   </span><br><span class="line">&#125;// Of class SequentialList</span><br></pre></td></tr></table></figure>
+
+<hr>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/12/14/Java%E7%B1%BB/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/12/20/%E6%97%A5%E6%92%B8Java2/>http://example.com/2021/12/20/%E6%97%A5%E6%92%B8Java2/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-12-20T23:29:51+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Dec 20, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-  </section>
-  
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/12/20/%E6%97%A5%E6%92%B8Java2/&title=日撸Java2 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
     
-  
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/12/20/%E6%97%A5%E6%92%B8Java2/&title=日撸Java2 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/12/20/%E6%97%A5%E6%92%B8Java2/&title=日撸Java2 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
 
 
-    
+
+        
+      
+    </div>
+  </div>
+
+
   
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2021/12/17/%E6%97%A5%E6%92%B8Java1/'>
+          <p class='title'><i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+title:日撸Java 1date:2021-12-17 22:30:58tags:Java
+
+Java第一天Hello World12345678910111213package base...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -512,125 +647,28 @@ String类中提供更改对象内容的方法并未真正更改内容，而是�
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/java/" style="font-size: 14px; color: #999">java</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%A4%A9"><span class="toc-text">第三天</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%BA%E5%BA%8F%E8%A1%A8"><span class="toc-text">顺序表</span></a></li></ol></li></ol>
     </div>
   </section>
 
 
   
 
-  
-    
-    
-
-<section class="widget qrcode shadow desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
-
-  
-
 
 </aside>
+
 
 
 		  
@@ -639,8 +677,8 @@ String类中提供更改对象内容的方法并未真正更改内容，而是�
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="日撸Java2";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
