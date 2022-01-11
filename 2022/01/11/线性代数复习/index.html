@@ -22,7 +22,7 @@
 
   
 
-  <title>如何搭建hexo博客 | Hexo</title>
+  <title>线性代数复习 | Hexo</title>
 
   
 
@@ -96,16 +96,18 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">如何搭建hexo博客</h1>
+          <h1 class="title-wrap">线性代数复习</h1>
           <h2 class="title-sub-wrap">
             <strong>John Doe</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-12-15T06:18:31.000Z" itemprop="datePublished">2021-12-15</time>
+            <time  class="article-date" datetime="2022-01-11T01:45:13.000Z" itemprop="datePublished">2022-01-11</time>
           </h2>
           <ul class="wrap-list dark">
   
 </ul>
           <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E6%95%B0%E5%AD%A6/">🏷️ 数学</a></li>
   
 </ul>
         </div>
@@ -129,67 +131,76 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h1><h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>这个可以在软件商店安装</p>
-<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>打开git Bash</p>
-<p>分别执行</p>
-<p>git config –global user.name “你的用户名”</p>
-<p>git config –global user.email “你的注册邮箱”</p>
-<p>检查是否正确</p>
-<p>git config user.name</p>
-<p>git config user.email</p>
+        <h1 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h1><p>性质1<br>$$<br>a=\left[</p>
+<p>\matrix{</p>
+<pre><code>x &amp; a &amp; a &amp; ... &amp; a\\
+
+a &amp; x &amp; a &amp; ... &amp; a\\
+
+a &amp; a &amp; x &amp; ... &amp; a\\
+. &amp; . &amp; . &amp; &amp; .\\
+. &amp; . &amp; . &amp; &amp; .\\
+. &amp; . &amp; . &amp; &amp; .\\
+a &amp; a &amp; a&amp; ... &amp; x
+</code></pre>
+<p>}</p>
+<p>\right]=(x-a)^n-^1[x+(n-1)*a]<br>$$</p>
 <hr>
-<p>执行ssh-keygen -t rsa -C “你的用户名”</p>
-<p>三次回车后电脑会生成.ssh文件，找到id_rsa.pub将公钥复制到</p>
-<p><img src="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/33.jpg"></p>
-<p><img src="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/44.jpg"></p>
-<p><img src="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/55.jpg"></p>
-<h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p><strong><a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org</a></strong></p>
-<p>选择LTS，可以一直选择next</p>
-<p>装好之后可以通过命令行</p>
-<p><strong>node -v</strong></p>
-<p><strong>npm -v</strong></p>
-<p>检查是否安装完成</p>
-<p>因为hexo博客是基于npm上，所以node.js是必要的。不过因为国内镜像比较慢所以我们就通过npm下载cnpm然后连接到淘宝镜像</p>
-<p><strong>npm install -g cnpm –registry<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></strong></p>
-<p><strong>cnpm -v</strong>检验</p>
+<p>性质2<br>$$<br>a=\left[</p>
+<p>\matrix{</p>
+<pre><code>1 &amp; 1 &amp; 1 &amp; ... &amp; 1\\
+
+x_1 &amp; x_2 &amp; x_3 &amp; ... &amp; x_n\\
+
+x_1^2 &amp; x_2^2 &amp; x_3^2 &amp; ... &amp; x_n^2\\
+. &amp; . &amp; . &amp; &amp; .\\
+. &amp; . &amp; . &amp; &amp; .\\
+. &amp; . &amp; . &amp; &amp; .\\
+x_1^n-^1 &amp; x_2^n-^1 &amp; x_3^n-^1&amp; ... &amp; x_n^n-^1
+</code></pre>
+<p>}</p>
+<p>\right]\=(x_n-x_n-_1)(x_n-x_n-_2)…(x_n-x_1)\<br>*(x_n-_1-x_n-_2)…(x_n-_1-x_1)\<br>*…\<br>*(x_2-x_1)<br>$$</p>
+<p>$$<br>计算\<br>a=\left[</p>
+<p>\matrix{</p>
+<pre><code>1 &amp; 1 &amp; 1 &amp; 1\\
+3 &amp; 4 &amp; 5 &amp; 6\\
+3^2 &amp; 4^2 &amp; 5^2 &amp; 6^2\\
+3^3&amp; 4^3 &amp; 5^3 &amp; 6^3\\
+</code></pre>
+<p>}</p>
+<p>\right]\<br>x_1=3,x_2=4,x_3=5,x_4=6\<br>a=(6-5)<em>(6-4)</em>(6-3)<em>(5-4)</em>(5-3)*(4-3)=12<br>$$</p>
 <hr>
-<h1 id="搭建hexo"><a href="#搭建hexo" class="headerlink" title="搭建hexo"></a>搭建hexo</h1><p>可以在cmd上执行<strong>cnpm install -g hexo-cli</strong></p>
-<p>也可以在git Bash看自己熟悉哪一种方式</p>
-<p><strong>hexo -v</strong></p>
-<p>搭建好之后通过<strong>mkdir blog</strong>(文件名可以自由创建，推荐安装在C盘，D盘我错了好几次)创建一个文件夹，之后所有的操作都在这个文件夹内执行，如果在哪一步出现了问题，直接干掉blog重来就行</p>
-<p>blog创建好之后进入blog文件</p>
-<p>执行命令行<strong>hexo init</strong>会自动在blog文件内创立需要的文件</p>
-<p>成功会出现Starting with…</p>
-<p>然后执行<strong>hexo s</strong>就会在本地建立一个博客，会给你一个<strong><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></strong>反馈，通过他就可以进行本地访问</p>
-<h1 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h1><p>这一步可以选择在<strong>阿里云</strong>、<strong>腾讯云</strong>、<strong>华为云</strong>等去购买域名，也可以部署在Github上</p>
-<p>推荐搭建在Gihub上，因为**<del>免费</del>**</p>
-<p>浏览器</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a></p>
-<p>创建一个账户，有就可以跳过</p>
-<p>创建好之后点击Create Repository创建仓库</p>
-<p><img src="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/11.jpg"></p>
-<p><img src="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/22.jpg"></p>
-<p><strong>注意</strong>：name一定是你的<strong>用户名.github.io</strong></p>
-<p>Description可写可不写</p>
-<p>然后点击Create</p>
-<p><img src="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/Users/Lenovo\blog\source_posts\如何搭建hexo博客\6.png" alt="markdown"></p>
-<p>这是创建好的空仓库</p>
-<p>然后cmd执行命令行cnpm install –save hexo-depolyer-git</p>
-<p>执行notepad _config.yml</p>
-<p>配置<img src="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/88.jpg"></p>
-<p>黄色的建议复制ssh<img src="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/77.jpg"></p>
-<p><strong>注意</strong>：每一个冒号后都有空格</p>
-<p>前面都完成后就执行hexo d</p>
-<p>在cmd界面会提醒你输入账号，密码，成功后就可以通过你的<strong>用户名.github.io</strong>进行访问</p>
-<h1 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h1><p>cmd界面进入blog—&gt;source—&gt;_posts</p>
-<p>执行hexo new “标题”</p>
-<p>然后可以直接在cmd内blog—&gt;source—&gt;_posts文件下执行标题.md打开markdown编译器进行编写</p>
-<p>也可以通过hexo new “标题”手动打开文件</p>
-<p>每一次对blog文件进行更改后在cmd界面blog文件下执行</p>
-<p>hexo clean</p>
-<p>hexo g</p>
-<p>hexo d</p>
-<p>就可以部署到远端</p>
+<p>性质3:</p>
+<ol>
+<li>两行(列)相同或成比例时，行列式为0</li>
+</ol>
+<p>$$<br>a=\left[</p>
+<p>\matrix{</p>
+<pre><code>1 &amp; 2 &amp; 3 &amp; 4\\
+2 &amp; 4 &amp; 6 &amp; 8\\
+3 &amp; 4 &amp; 5 &amp; 6\\
+7 &amp; 8 &amp; 9 &amp; 10\\
+</code></pre>
+<p>}</p>
+<p>\right]=0<br>$$</p>
+<ol start="2">
+<li>某行(列)为两项相加减时，可拆为两个行列式相加减<br>$$<br>a=\left[\matrix{<pre><code>1 &amp; 2+a &amp; 3 &amp; 4\\
+2 &amp; 4+b &amp; 6 &amp; 8\\
+3 &amp; 4+c &amp; 5 &amp; 6\\
+7 &amp; 8+d &amp; 9 &amp; 10\\
+</code></pre>
+}\right]=<br>\left[\matrix{<pre><code>1 &amp; 2 &amp; 3 &amp; 4\\
+2 &amp; 4 &amp; 6 &amp; 8\\
+3 &amp; 4 &amp; 5 &amp; 6\\
+7 &amp; 8 &amp; 9 &amp; 10\\
+</code></pre>
+}\right]+<br>\left[\matrix{<pre><code>1 &amp; a &amp; 3 &amp; 4\\
+2 &amp; b &amp; 6 &amp; 8\\
+3 &amp; c &amp; 5 &amp; 6\\
+7 &amp; d &amp; 9 &amp; 10\\
+</code></pre>
+}\right]<br>$$</li>
+</ol>
 <hr>
 
       </section>
@@ -198,28 +209,14 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-    <div class="card-text">
-      
-        <a href="/2021/12/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">机器学习</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2021/12/14/Java%E7%B1%BB/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">Java类</h2>
+        <a href="/2021/12/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">计算机网络</h2>
         </a>
       
       <div class="card-text--row">Older</div>
