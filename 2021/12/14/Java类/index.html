@@ -27,7 +27,7 @@
   
 
   
-    <link rel="shortcut icon" href="/blog/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
   
 
   
@@ -36,9 +36,9 @@
   
 
   
-<link rel="stylesheet" href="/blog/css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
-<link rel="alternate" href="/blog/atom.xml" title="my blog" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="my blog" type="application/atom+xml">
 </head>
 <body>
   <div class="root-container">
@@ -54,7 +54,7 @@
   <div class="navbar-content">
     <!-- logo -->
     <div class="navbar-logo">
-      <a href="/blog/">
+      <a href="/">
         
           my blog
         
@@ -69,11 +69,11 @@
       </div>
       <ul class="navbar-list">
         
-          <li class="navbar-list-item"><a href="/blog/">首页</a></li>
+          <li class="navbar-list-item"><a href="/">首页</a></li>
         
-          <li class="navbar-list-item"><a href="/blog/links">友链</a></li>
+          <li class="navbar-list-item"><a href="/links">友链</a></li>
         
-          <li class="navbar-list-item"><a href="/blog/about">关于</a></li>
+          <li class="navbar-list-item"><a href="/about">关于</a></li>
         
       </ul>
     </div>
@@ -108,7 +108,7 @@
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/blog/tags/java/">🏷️ java</a></li>
+    <li><a href="/tags/java/">🏷️ java</a></li>
   
 </ul>
         </div>
@@ -800,14 +800,14 @@
 <p>方法与Collection相同</p>
 <p>实现Set集合接口的类：HashSet、TreeSet</p>
 <hr>
-<h4 id="主要方法-3"><a href="#主要方法-3" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/blog/blog/2021/12/14/Java%E7%B1%BB/Java%E7%B1%BB/1.jpg"></p>
+<h4 id="主要方法-3"><a href="#主要方法-3" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/2021/12/14/Java%E7%B1%BB/1.jpg"></p>
 <hr>
 <h3 id="HashSet集合类"><a href="#HashSet集合类" class="headerlink" title="HashSet集合类"></a>HashSet集合类</h3><p>集合中元素<strong>无序</strong></p>
 <p>元素<strong>不重复</strong></p>
 <p>元素<strong>值</strong>可以为<strong>空（null）</strong></p>
 <p>存储每个元素时会生成一个唯一的整数标识——<strong>散列码</strong>（hash code），HashSet根据散列码来决定元素所在的存储位置</p>
 <hr>
-<h4 id="主要方法-4"><a href="#主要方法-4" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/blog/blog/2021/12/14/Java%E7%B1%BB/Java%E7%B1%BB/2.jpg"></p>
+<h4 id="主要方法-4"><a href="#主要方法-4" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/2021/12/14/Java%E7%B1%BB/2.jpg"></p>
 <hr>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import java.util.HashSet;</span><br><span class="line">import java.util.Iterator;</span><br><span class="line">public class Main &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		HashSet&lt;String&gt; set = new HashSet&lt;String&gt;();</span><br><span class="line">		set.add(&quot;one&quot;);</span><br><span class="line">		set.add(&quot;two&quot;);</span><br><span class="line">		set.add(&quot;tree&quot;);</span><br><span class="line">		set.add(&quot;one&quot;);//set中存放one,two,three,且无序不重复</span><br><span class="line">		System.out.println(set.size());</span><br><span class="line">		Iterator&lt;String&gt; iterator = set.iterator();</span><br><span class="line">		while(iterator.hasNext())&#123;</span><br><span class="line">		    System.out.println(iterator.next());</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line">3</span><br><span class="line">one</span><br><span class="line">tree</span><br><span class="line">two</span><br></pre></td></tr></table></figure>
 
@@ -816,7 +816,7 @@
 <p>元素<strong>不重复</strong></p>
 <p>存储的元素类型必须是<strong>可排序</strong>的</p>
 <hr>
-<h4 id="主要方法-5"><a href="#主要方法-5" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/blog/blog/2021/12/14/Java%E7%B1%BB/Java%E7%B1%BB/3.jpg"></p>
+<h4 id="主要方法-5"><a href="#主要方法-5" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/2021/12/14/Java%E7%B1%BB/3.jpg"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Iterator;</span><br><span class="line">import java.util.TreeSet;</span><br><span class="line">public class Main &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		TreeSet&lt;String&gt; treeSet = new TreeSet&lt;String&gt;();</span><br><span class="line">		treeSet.add(&quot;banana&quot;);</span><br><span class="line">		treeSet.add(&quot;peach&quot;);</span><br><span class="line">		treeSet.add(&quot;pineapple&quot;);</span><br><span class="line">		treeSet.add(&quot;apple&quot;);</span><br><span class="line">				  </span><br><span class="line">		System.out.println(treeSet.first());</span><br><span class="line">		System.out.println(treeSet.last());</span><br><span class="line">		Iterator&lt;String&gt; iterator = treeSet.iterator();</span><br><span class="line">		while(iterator.hasNext())&#123;</span><br><span class="line">		   System.out.println(iterator.next());</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line">apple</span><br><span class="line">pineapple</span><br><span class="line">apple</span><br><span class="line">banana</span><br><span class="line">peach</span><br><span class="line">pineapple</span><br></pre></td></tr></table></figure>
 
 <hr>
@@ -825,13 +825,13 @@
 <p><strong>键（key）不能重复</strong>，<strong>值（value）可以重复</strong></p>
 <p>实现Set集合接口的类：HashMap、HashTree、HashTable</p>
 <hr>
-<h4 id="主要方法-6"><a href="#主要方法-6" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/blog/blog/2021/12/14/Java%E7%B1%BB/Java%E7%B1%BB/4.jpg"></p>
-<p><img src="/blog/blog/2021/12/14/Java%E7%B1%BB/Java%E7%B1%BB/5.jpg"></p>
+<h4 id="主要方法-6"><a href="#主要方法-6" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/2021/12/14/Java%E7%B1%BB/4.jpg"></p>
+<p><img src="/2021/12/14/Java%E7%B1%BB/5.jpg"></p>
 <hr>
 <h3 id="HashMap集合类"><a href="#HashMap集合类" class="headerlink" title="HashMap集合类"></a>HashMap集合类</h3><p>采用散列表数据结构存储数据</p>
 <p>key-value存储</p>
 <p>键（key）不能重复，值（value）可以重复</p>
-<h4 id="主要方法-7"><a href="#主要方法-7" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/blog/blog/2021/12/14/Java%E7%B1%BB/Java%E7%B1%BB/6.jpg"></p>
+<h4 id="主要方法-7"><a href="#主要方法-7" class="headerlink" title="主要方法"></a>主要方法</h4><p><img src="/2021/12/14/Java%E7%B1%BB/6.jpg"></p>
 <h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><hr>
 <h2 id="系统类"><a href="#系统类" class="headerlink" title="系统类"></a>系统类</h2><hr>
 <h2 id="其他常用类"><a href="#其他常用类" class="headerlink" title="其他常用类"></a>其他常用类</h2>
@@ -846,7 +846,7 @@
     
     <div class="card-text">
       
-        <a href="/blog/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" itemprop="url">
+        <a href="/2021/12/15/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" itemprop="url">
           <h2 class="card-text--title text-ellipsis">如何搭建hexo博客</h2>
         </a>
       
@@ -861,7 +861,7 @@
     
     <div class="card-text">
       
-        <a href="/blog/2021/12/13/hello-world/" itemprop="url">
+        <a href="/2021/12/13/hello-world/" itemprop="url">
           <h2 class="card-text--title text-ellipsis">Hello World</h2>
         </a>
       
@@ -961,7 +961,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      <a href="/blog/tags/Java/" style="font-size: 10px;" class="tags-cloud-0">Java</a> <a href="/blog/tags/java/" style="font-size: 20px;" class="tags-cloud-10">java</a>
+      <a href="/tags/Java/" style="font-size: 10px;" class="tags-cloud-0">Java</a> <a href="/tags/java/" style="font-size: 20px;" class="tags-cloud-10">java</a>
     </div>
   </div>
 </section>
@@ -1042,7 +1042,7 @@
 
 
 
-<script src="/blog/js/script.js"></script>
+<script src="/js/script.js"></script>
 
 
   
