@@ -637,21 +637,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-30
+                    2022-02-06
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    962
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    6 分
                 </div>
                 
 
@@ -864,30 +864,17 @@ print(type(float(num)))
 &lt;class 'str'&gt;
 &lt;class 'float'&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="格式化输出"><a href="#格式化输出" class="headerlink" title="格式化输出"></a>格式化输出</h3><table>
-<thead>
-<tr>
-<th align="center">格式化字符</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">%s</td>
-<td align="center">字符串</td>
-</tr>
-<tr>
-<td align="center">%d</td>
-<td align="center">有符号十进制整数，%06d表示输出的整数显示的位数，不足补0</td>
-</tr>
-<tr>
-<td align="center">%f</td>
-<td align="center">浮点数，%.02f表示小数点后只显示两位</td>
-</tr>
-<tr>
-<td align="center">%%</td>
-<td align="center">输出%</td>
-</tr>
-</tbody></table>
+<p><strong>print</strong>函数会自动换行，在输出内容后加**end=””**不会换行</p>
+<pre><code class="print('hfi',end=&quot;&quot;)">
+### 格式化输出
+
+| 格式化字符 |                          含义                           |
+| :--------: | :-----------------------------------------------------: |
+|     %s     |                         字符串                          |
+|     %d     | 有符号十进制整数，%06d表示输出的整数显示的位数，不足补0 |
+|     %f     |           浮点数，%.02f表示小数点后只显示两位           |
+|     %%     |                          输出%                          |
+
 <pre class="line-numbers language-none"><code class="language-none"># 定义一个字符串变量name，输出：我的名字叫小明，请多多关照
 
 name = '小明'
@@ -922,7 +909,9 @@ print('数据比例是 %.02f%%' % scale)
 Process finished with exit code 0
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h2><pre class="line-numbers language-none"><code class="language-none">age = int(input())
+## 判断语句
+
+<pre class="line-numbers language-none"><code class="language-none">age = int(input())
 if age &gt;= 18:
     print('可以进网吧')
 else: print('不能进网吧')
@@ -942,38 +931,145 @@ else: print('不能进网吧')
 
 
 
-<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><table>
-<thead>
-<tr>
-<th align="center">运算符</th>
-<th align="center">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">==</td>
-<td align="center">判断两个操作数的值是否相等</td>
-</tr>
-<tr>
-<td align="center">!=</td>
-<td align="center">判断两个操作数的值是否不想等</td>
-</tr>
-<tr>
-<td align="center">&gt;</td>
-<td align="center">判断左操作数的值是否大于右操作数</td>
-</tr>
-<tr>
-<td align="center">&lt;</td>
-<td align="center">判断左操作数的值是否小于右操作数</td>
-</tr>
-<tr>
-<td align="center">&gt;=</td>
-<td align="center">判断左操作数的值是否大于等于右操作数</td>
-</tr>
-<tr>
-<td align="center">&lt;=</td>
-<td align="center">判断左操作数的值是否小于等于右操作数</td>
-</tr>
-</tbody></table>
+### 比较运算符
+
+| 运算符 |                 描述                 |
+| :----: | :----------------------------------: |
+|   ==   |      判断两个操作数的值是否相等      |
+|   !=   |     判断两个操作数的值是否不想等     |
+|   &gt;    |   判断左操作数的值是否大于右操作数   |
+|   &lt;    |   判断左操作数的值是否小于右操作数   |
+|   &gt;=   | 判断左操作数的值是否大于等于右操作数 |
+|   &lt;=   | 判断左操作数的值是否小于等于右操作数 |
+
+### 逻辑运算
+
+#### python逻辑运算符
+
+#### and/与
+
+| 条件1 | 条件2 | 结果  |
+| :---: | :---: | :---: |
+| True  | True  | True  |
+| True  | False | False |
+|  ...  |  ...  |       |
+
+------
+
+#### or/或
+
+| 条件1 | 条件2 | 结果  |
+| :---: | :---: | :---: |
+| True  | True  | True  |
+| True  | False | True  |
+| False | False | False |
+
+------
+
+#### not/非
+
+| 条件  | 结果  |
+| :---: | :---: |
+| True  | False |
+| False | True  |
+
+<pre class="line-numbers language-none"><code class="language-none">age = int(input())
+if age &gt;=0 and age &lt;=100 :
+    print('满足要求')
+else : print('不满足')
+
+p_score = float(input())
+c_score = float(input())
+if p_score &gt;= 60 or c_score &gt;= 60 :
+    print('成绩及格')
+else : print('成绩不合格，请努力')
+
+运行结果:
+65
+满足要求
+54
+32
+成绩不合格，请努力<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">is_employee = False
+if not is_employee :
+    print('暗码错误，3s后自毁!!!')
+else : print('暗码正确，允许进入')
+
+运行结果：
+True
+暗码错误，3s后自毁!!!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+------
+
+### elif
+
+elifh和else都必须与if同时使用
+
+<pre class="line-numbers language-none"><code class="language-none">h_name = input()
+if h_name == '情人节' :
+    print('玫瑰 and 电影')
+elif h_name == '平安夜' :
+    print('苹果 and 吃大餐')
+elif h_name == '生日' :
+    print('蛋糕')
+else : print('有你的每一天都是节日')
+
+运行结果：
+生日
+蛋糕<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+## 随机数
+
+工具包**random**
+
+**random.randint(a,b)**,返回**[a,b]**之间的整数
+
+------
+
+# 应用——石头剪刀布
+
+<pre class="line-numbers language-none"><code class="language-none">import random
+
+print('请出拳(石头，剪刀，布)：')
+player = input()
+print('玩家选择：%s' % player)
+computer = random.randint(1 , 3)
+if computer == 1 :
+    Computer = '石头'
+    print('AI选择：%s' % Computer)
+    if player == '布' :
+        print('玩家胜利，撒花')
+    elif player == '石头' :
+        print('平局，真的没有偷看吗')
+    else :
+        print('可惜，差一点就赢了')
+elif computer == 2 :
+    Computer = '剪刀'
+    print('AI选择：%s' % Computer)
+    if player == '石头' :
+        print('玩家胜利，撒花')
+    elif player == '剪刀' :
+        print('平局，真的没有偷看吗')
+    else :
+        print('可惜，差一点就赢了')
+else :
+    Computer = '布'
+    print('AI选择：%s' % Computer)
+    if player == '剪刀' :
+        print('玩家胜利，撒花')
+    elif player == '布' :
+        print('平局，真的没有偷看吗')
+    else :
+        print('可惜，差一点就赢了')
+        
+运行:
+请出拳(石头，剪刀，布)：
+剪刀
+玩家选择：剪刀
+AI选择：布
+玩家胜利，撒花<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 
                 
             </div>
@@ -1557,18 +1653,17 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/5e00b262.html">
+                <a href="/posts/8d8e15c3.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928015500.jpg" class="responsive-img" alt="first python">
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="second day_python">
                         
-                        <span class="card-title">first python</span>
+                        <span class="card-title">second day_python</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1578,9 +1673,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-29
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-06
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1589,7 +1684,6 @@ new Valine({
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1879,7 +1973,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.7k</span>&nbsp;字
+                class="white-color">11.4k</span>&nbsp;字
             
             
             
