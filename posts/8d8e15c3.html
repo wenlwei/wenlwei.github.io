@@ -637,21 +637,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-07
+                    2022-02-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    970
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -862,7 +862,7 @@ mul_tab.mul_tab()
 	封装代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<h3 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h3><h4 id="实参函数与无参函数"><a href="#实参函数与无参函数" class="headerlink" title="实参函数与无参函数"></a>实参函数与无参函数</h4><pre class="line-numbers language-none"><code class="language-none">def sum_2_num(num1, num2):
+<h3 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h3><h4 id="有参函数与无参函数"><a href="#有参函数与无参函数" class="headerlink" title="有参函数与无参函数"></a>有参函数与无参函数</h4><pre class="line-numbers language-none"><code class="language-none">def sum_2_num(num1, num2):
     '''两数求和'''
 
 
@@ -874,12 +874,61 @@ sum_2_num(10, 45)
 运行：
 10 + 45 = 55<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>实参函数：灵活可以处理不同的值</p>
+<p>有参函数：灵活可以处理不同的值</p>
 <p>无参函数：只能处理固定的值</p>
 <hr>
 <h4 id="形参和实参"><a href="#形参和实参" class="headerlink" title="形参和实参"></a>形参和实参</h4><p>形参：定义函数时小括号中的参数，用来接收参数</p>
 <p>实参：调用函数时小括号中的参数，用来传递数据到函数内部</p>
+<h4 id="返回值return"><a href="#返回值return" class="headerlink" title="返回值return"></a>返回值return</h4><p>函数执行完成之后给调用者返回一个结果</p>
+<p>return之后的语句都不会执行</p>
+<hr>
+<h3 id="函数的嵌套调用"><a href="#函数的嵌套调用" class="headerlink" title="函数的嵌套调用"></a>函数的嵌套调用</h3><p>在函数中调用另一个函数</p>
+<pre class="line-numbers language-none"><code class="language-none">def sum_2_num(num1, num2):
+    '''两数求和'''
 
+
+    result = num1 + num2
+    return result
+
+def mul_10():
+    '''嵌套调用sum_2_num()'''
+
+    result = sum_2_num(10, 20) * 10
+    return result
+
+print(mul_10())
+
+运行结果：
+300<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<pre class="line-numbers language-none"><code class="language-none">def print_line(char, times):
+
+    print(char * times)
+
+def print_times(char, times, ans):
+
+    i = 0
+    while i &lt; ans :
+        print_line(char, times)
+        i += 1
+
+ch = input('请输入要打印的字符 :')
+times = int(input('请输入要打印的次数 :'))
+ans = int(input('请输入要打印的行数 :'))
+print_times(ch, times, ans)
+
+运行结果：
+请输入要打印的字符 :*
+请输入要打印的次数 :10
+请输入要打印的行数 :3
+**********
+**********
+**********
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2>
                 
             </div>
             <hr/>
@@ -1782,7 +1831,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">12.3k</span>&nbsp;字
+                class="white-color">12.5k</span>&nbsp;字
             
             
             
