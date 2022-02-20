@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="second day_python, 计算机">
+    <meta name="keywords" content="kalman, 计算机">
     <meta name="description" content="本科">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>second day_python | wenlwei</title>
+    <title>kalman | wenlwei</title>
 
     <link rel="icon" type="image/jpeg" href="https://s4.ax1x.com/2022/01/29/HpyLa4.jpg">
 
@@ -488,12 +488,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021440.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">second day_python</h1>
+                    <h1 class="description center-align post-title">kalman</h1>
                 </div>
             </div>
         </div>
@@ -614,8 +614,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">机器学习</span>
                             </a>
                         
                     </div>
@@ -630,28 +630,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-06
+                    2022-02-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-15
+                    2022-02-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    784
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    3 分
                 </div>
                 
 
@@ -669,266 +669,68 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="second-day-python"><a href="#second-day-python" class="headerlink" title="second day_python"></a>second day_python</h1><h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><p>while 条件(判断 计数器 是否达到 目标次数):</p>
-<p>​    条件满足时，做到事1</p>
-<p>​    条件满足时，做的事2</p>
-<p>​    …</p>
-<p>​    处理条件(计算球+1)</p>
-<pre class="line-numbers language-none"><code class="language-none">i = 0
-while i &lt; 5 :
-    print('hello world')
-    i+=1
-print('i = %d' % i)
-
-运行:
-hello world
-hello world
-hello world
-hello world
-hello world
-i = 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="0-100求和"><a href="#0-100求和" class="headerlink" title="0~100求和"></a>0~100求和</h4><pre class="line-numbers language-none"><code class="language-none">i = 0
-sum = 0
-while i &lt;= 100 :
-    sum += i
-    i+=1
-print('sum = %d' % sum)
-
-运行:
-5050<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="0-100偶数求和"><a href="#0-100偶数求和" class="headerlink" title="0~100偶数求和"></a>0~100偶数求和</h4><pre class="line-numbers language-none"><code class="language-none">i = 0
-sum = 0
-while i &lt;= 100 :
-    if i % 2 == 0 :
-        sum += i
-    i+=1
-print('sum = %d' % sum)
-
-运行:
-2550<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+                <h1 id="卡尔曼滤波"><a href="#卡尔曼滤波" class="headerlink" title="卡尔曼滤波"></a>卡尔曼滤波</h1><hr>
+<h2 id="什么是卡尔曼滤波"><a href="#什么是卡尔曼滤波" class="headerlink" title="什么是卡尔曼滤波"></a>什么是卡尔曼滤波</h2><p>在==噪声==干扰下，从多个不确定信息中得出最优值。</p>
+<p>根据<strong>前一个</strong>状态预测<strong>当前</strong>状态，即根据观测值和测量值得出最优值</p>
+<p>状态方程（测量值）x<del>k</del>=x<del>k-1</del>+Bu<del>k</del>+w<del>k</del></p>
+<p>观测方程y<del>k</del>=x<del>k-1</del>+v<del>k</del></p>
+<p>w<del>k</del>,v<del>k</del>均满足<strong>高斯分布</strong></p>
+<p>w<del>k</del>$\epsilon$(0,$\sigma$<del>Q</del>^2^)</p>
+<p>v<del>k</del>$\epsilon$(0,$\sigma$<del>R</del>^2^)</p>
+<p>k表示当前时刻，B表示控制矩阵，u<del>k</del>表示输入，w<del>k</del>表示过程噪声，v<del>k</del>表示观测噪声</p>
+<p>像无人驾驶汽车（匀速运动），我们如何判断汽车当前的位置</p>
+<p>理想状态满足 x<del>k</del>=x<del>k-1</del>+v*t，实际中会因为天气，路面等产生误差，这些误差就就做过程噪声w<del>k</del>，v<del>k</del>为GPS产生的误差</p>
+<p>此时汽车的状态为 x<del>k</del>=x<del>k-1</del>+dtv+w<del>k</del>，y<del>k</del>=y<del>k-1</del>+v<del>k</del></p>
+<p>我们可以根据x<del>k</del>和y<del>k</del>预测出汽车当前最接近实际的位置</p>
 <hr>
-<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><h3 id="break和continue"><a href="#break和continue" class="headerlink" title="break和continue"></a>break和continue</h3><h4 id="break"><a href="#break" class="headerlink" title="break"></a>break</h4><p>满足某条件时，<strong>退出循环</strong></p>
+<h3 id="方差"><a href="#方差" class="headerlink" title="方差"></a>方差</h3><p>一维方差：</p>
+<p>理解为噪声方差和状态方差$\sigma$<del>t</del></p>
+<p>$\sigma$<del>t</del>为本身的误差+w<del>k</del>，表示一个值</p>
+<p>二维方差：</p>
+<p>$\sigma$<del>t</del>表示一个矢量<br>$$<br>\sigma_t=\left[<br>    \matrix{<br>        \sigma_t<del>_1\<br>        \sigma_t</del>_2<br>    }<br>\right]<br>$$<br>每一个$\sigma$<del>t</del>对应一个w<del>k</del></p>
+<p>用协方差cov表示<br>$$<br>cov=\left[<br>    \matrix{<br>        cov(\sigma_t<del>_1,\sigma_t</del>_1) &amp; cov(\sigma_t<del>_1,\sigma_t</del>_2)\<br>        cov(\sigma_t<del>_2,\sigma_t</del>_1) &amp; cov(\sigma_t<del>_2,\sigma_t</del>_2)\<br>    }<br>\right]<br>$$<br>三位方差：</p>
+<p>用协方差矩阵表示<br>$$<br>C=\left[<br>    \matrix{<br>        cov(\sigma_t<del>_1,\sigma_t</del>_1) &amp; cov(\sigma_t<del>_1,\sigma_t</del>_2) &amp; cov(\sigma_t<del>_1,\sigma_t</del>_3) &amp; …\<br>        cov(\sigma_t<del>_2,\sigma_t</del>_1) &amp; cov(\sigma_t<del>_2,\sigma_t</del>_2) &amp; cov(\sigma_t<del>_2,\sigma_t</del>_3) &amp;…\<br>        …\<br>    }<br>\right]<br>$$</p>
 <hr>
-<h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h4><p>满足某条件时，<strong>退出当前循环</strong>，开始下一次循环</p>
+<h4 id="协方差"><a href="#协方差" class="headerlink" title="协方差"></a>协方差</h4><p>cov=$\Sigma$(x<del>i</del>-$\mu$<del>x</del>)*(y<del>j</del>-$\mu$<del>y</del>)/(n-1)</p>
+<h2 id="调参"><a href="#调参" class="headerlink" title="调参"></a>调参</h2><p>每一次使用卡尔曼滤波器时，主要调参过程噪声和状态噪声</p>
+<p>x一般取0，p不可为0，为了方便收敛一般取小为1</p>
 <hr>
-<pre class="line-numbers language-none"><code class="language-none">i = 0
-sum = 0
-while i &lt;= 5 :
-    sum += i
-    if sum &gt;= 3 :
-        break
-    i+=1
-
-j = 0
-ans = 0
-while j&lt;=5 :
-    ans += j
-    if ans == 3:
-        continue
-    j+=1
-
-print('sum = %d,i = %d' % (sum,i))
-print('ans = %d,j = %d' % (ans,j))
-
-运行：
-sum = 3,i = 2
-ans = 17,j = 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h2 id="卡尔曼公式"><a href="#卡尔曼公式" class="headerlink" title="卡尔曼公式"></a>卡尔曼公式</h2><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/H9yr60"><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://s4.ax1x.com/2022/01/30/H9yr60.jpg" alt="H9yr60.jpg"></a></p>
+<p>实现过程：</p>
+<p>使用上一次的最优估计值预测当前值(先验估计值)，同时使用观测值修正当前值，得到最优值</p>
+<p>最优估计值：x<del>t</del></p>
+<p>先验估计值：x<del>t</del>^—^</p>
+<p>先验估计协方差：p<del>t</del>^—^</p>
+<p>假设一个作匀加速运动的汽车模型p表示位置，v表示速度<br>$$<br>x_t=\left[<br>    \matrix{<br>        p\<br>        v\<br>    }<br>\right]<br>$$<br>预测模型：</p>
+<p>p<del>i</del>=p<del>i-1</del>+v<del>i-1</del>$\Delta$t+a*$\Delta$t^2^1/2</p>
+<p>v<del>i</del>=v<del>i-1</del>+a*$\Delta$t</p>
+<p>即<br>$$<br>\left[<br>    \matrix{<br>        p_i\<br>        v_i\<br>    }<br>\right]=<br>\left[<br>    \matrix{<br>        1 &amp; \Delta<del>t\<br>        0 &amp; 1\<br>    }<br>\right]<br>\left[<br>    \matrix{<br>        p_i</del><em>-<del>_1\<br>        v_i</del></em>-<del>_1<br>    }<br>\right]+<br>\left[<br>    \matrix{<br>        \Delta t^2/2\<br>        \Delta t\<br>    }<br>\right]a_i<br>$$<br>x</del>t<del>^—^=Fx</del>t-1<del>^—^+Bu</del>t-1~</p>
 <hr>
-<h2 id="循环嵌套"><a href="#循环嵌套" class="headerlink" title="循环嵌套"></a>循环嵌套</h2><h3 id="打印小星星"><a href="#打印小星星" class="headerlink" title="打印小星星"></a>打印小星星</h3><pre class="line-numbers language-none"><code class="language-none">i = 1
-s_tr = '*'
-while i &lt;= 5 :
-    print(s_tr*i)
-    i+=1
-
-运行：
-*
-**
-***
-****
-*****<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h3 id="先验估计值"><a href="#先验估计值" class="headerlink" title="先验估计值"></a>先验估计值</h3><p>x<del>t</del>^—^=Fx<del>t-1</del>^—^+Bu<del>t-1</del>+w<del>k</del></p>
+<p>状态转移矩阵：F</p>
+<p>控制矩阵：B</p>
+<p>输入：u</p>
 <hr>
-<pre class="line-numbers language-none"><code class="language-none">i = 0
-j = 0
-while i &lt; 5 :
-    j = 0
-    while j &lt;= i :
-        print('*',end='')
-        j += 1
-    print('')
-    i += 1
-
-运行：
-*
-**
-***
-****
-*****<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h3 id="先验估计协方差"><a href="#先验估计协方差" class="headerlink" title="先验估计协方差"></a>先验估计协方差</h3><p>cov(Ax<del>t</del>,Ax<del>t</del>)=Acov(x<del>t</del>,x<del>t</del>)A^T^</p>
+<p>cov(Ax<del>t</del>+a,Ax<del>t</del>+a)=Acov(x<del>t</del>,x<del>t</del>)A^T^</p>
+<p>cov(x<del>t</del>^—^,x<del>t</del>^—^)=cov(Fx<del>t-1</del>^—^+Bu<del>t-1</del>+w<del>k</del>,Fx<del>t-1</del>^—^+Bu<del>t-1</del>+w<del>k</del>)</p>
+<p>​             =Fcov(x<del>t-1</del>^—^,x<del>t-1</del>^—^)F^T^+cov(w<del>k</del>,w<del>k</del>)</p>
+<p>​                     =Fcov(x<del>t-1</del>^—^,x<del>t-1</del>^—^)F^T^+$\sigma$<del>Q</del>^2^</p>
+<p>即：p<del>t</del>^—^=Fp<del>t-1</del>^—^F^T^+$\sigma$<del>Q</del>^2^</p>
 <hr>
-<h3 id="打印九九乘法表"><a href="#打印九九乘法表" class="headerlink" title="打印九九乘法表"></a>打印九九乘法表</h3><pre class="line-numbers language-none"><code class="language-none">i = 1
-while i &lt;= 9 :
-    j = 1
-    while j &lt;= i :
-        
-        # 打印每行
-        print('%d * %d = %d\t' % (j,i,i * j),end=' ')
-
-        j += 1
-    i += 1
-    print('')
-    
-运行：
-1 * 1 = 1	
-1 * 2 = 2	2 * 2 = 4	
-1 * 3 = 3	2 * 3 = 6	3 * 3 = 9	
-1 * 4 = 4	2 * 4 = 8	3 * 4 = 12	4 * 4 = 16	
-1 * 5 = 5	2 * 5 = 10	3 * 5 = 15	4 * 5 = 20	5 * 5 = 25	
-1 * 6 = 6	2 * 6 = 12	3 * 6 = 18	4 * 6 = 24	5 * 6 = 30	6 * 6 = 36	
-1 * 7 = 7	2 * 7 = 14	3 * 7 = 21	4 * 7 = 28	5 * 7 = 35	6 * 7 = 42	7 * 7 = 49	
-1 * 8 = 8	2 * 8 = 16	3 * 8 = 24	4 * 8 = 32	5 * 8 = 40	6 * 8 = 48	7 * 8 = 56	8 * 8 = 64	
-1 * 9 = 9	2 * 9 = 18	3 * 9 = 27	4 * 9 = 36	5 * 9 = 45	6 * 9 = 54	7 * 9 = 63	8 * 9 = 72	9 * 9 = 81	<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h3 id="测量方程"><a href="#测量方程" class="headerlink" title="测量方程"></a>测量方程</h3><p>测量模型：</p>
+<p>Z<del>p</del>=p<del>t</del>+v<del>k</del></p>
+<p>Z<del>v</del>=0</p>
+<p>即<br>$$<br>\left[<br>    \matrix{<br>        Z_p\<br>        Z_v\<br>    }<br>\right]=<br>\left[<br>    \matrix{<br>        1 &amp; 0\<br>    }<br>\right]<br>\left[<br>    \matrix{<br>        p_t\<br>        v_t\<br>    }<br>\right]+<br>\left[<br>    \matrix{<br>       1 &amp; 0\<br>    }<br>\right]<br>\left[<br>    \matrix{<br>       \Delta p_t\<br>       \Delta v_t\<br>    }<br>\right]<br>$$<br>Z<del>t</del>=Hx<del>t</del>+v<del>k</del></p>
+<p><strong>注：测量量的维数不一定和状态量相同</strong></p>
 <hr>
-<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>定义函数——**<em>封装**</em> 独立的功能</p>
-<p>调用函数——享受**<em>封装**</em> 的成功</p>
-<p>函数使得效率提高及代码的**<em>重用**</em></p>
-<h3 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h3><p>关键字**<em>def**</em></p>
-<p>函数名命名规则：</p>
-<p>​    字母，数字，下划线随意组合</p>
-<p>​    不能以数字开头</p>
-<p>​    不能以关键字命名</p>
-<pre class="line-numbers language-none"><code class="language-none"># 只是封装不会主动执行
-def 函数名():
-	封装代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
+<h3 id="修正估计值"><a href="#修正估计值" class="headerlink" title="修正估计值"></a>修正估计值</h3><p>x<del>t</del>=x<del>t</del>^—^+K<del>t</del>(Z<del>t</del>-Hx<del>t</del>^—^)</p>
 <hr>
-<h3 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h3><h4 id="创建一个新的python文件"><a href="#创建一个新的python文件" class="headerlink" title="创建一个新的python文件"></a>创建一个新的python文件</h4><p>导入工具包</p>
-<p>关键字**<em>import**</em></p>
-<p>使用函数</p>
-<p>文件名.函数名</p>
-<pre class="line-numbers language-none"><code class="language-none">import 文件名
-
-文件名.函数名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
+<h3 id="更新卡尔曼增益"><a href="#更新卡尔曼增益" class="headerlink" title="更新卡尔曼增益"></a>更新卡尔曼增益</h3><p>K<del>t</del>=p<del>t</del>^—^H^T^/(Hp<del>t</del>^—^H^T^+$\sigma$<del>R</del>^2^)</p>
 <hr>
-<h4 id="或者在原文件上执行"><a href="#或者在原文件上执行" class="headerlink" title="或者在原文件上执行"></a>或者在原文件上执行</h4><pre class="line-numbers language-none"><code class="language-none">def 函数名():
-	封装代码
-
-# 调用函数
-函数名()
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h3 id="更新后验估计协方差"><a href="#更新后验估计协方差" class="headerlink" title="更新后验估计协方差"></a>更新后验估计协方差</h3><p>p<del>t</del>=(1-K<del>t</del>H)p<del>t</del>^—^</p>
 <hr>
-<h3 id="示例九九乘法表"><a href="#示例九九乘法表" class="headerlink" title="示例九九乘法表"></a>示例九九乘法表</h3><pre class="line-numbers language-none"><code class="language-none">def mul_tab():
-    i = 1
-    while i &lt;= 9:
-        j = 1
-        while j &lt;= i:
-            # 打印每行
-            print('%d * %d = %d\t' % (j, i, i * j), end=' ')
 
-            j += 1
-        i += 1
-        print('')<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<pre class="line-numbers language-none"><code class="language-none">import mul_tab
-
-mul_tab.mul_tab()
-
-运行：
-1 * 1 = 1	 
-1 * 2 = 2	 2 * 2 = 4	 
-1 * 3 = 3	 2 * 3 = 6	 3 * 3 = 9	 
-1 * 4 = 4	 2 * 4 = 8	 3 * 4 = 12	 4 * 4 = 16	 
-1 * 5 = 5	 2 * 5 = 10	 3 * 5 = 15	 4 * 5 = 20	 5 * 5 = 25	 
-1 * 6 = 6	 2 * 6 = 12	 3 * 6 = 18	 4 * 6 = 24	 5 * 6 = 30	 6 * 6 = 36	 
-1 * 7 = 7	 2 * 7 = 14	 3 * 7 = 21	 4 * 7 = 28	 5 * 7 = 35	 6 * 7 = 42	 7 * 7 = 49	 
-1 * 8 = 8	 2 * 8 = 16	 3 * 8 = 24	 4 * 8 = 32	 5 * 8 = 40	 6 * 8 = 48	 7 * 8 = 56	 8 * 8 = 64	 
-1 * 9 = 9	 2 * 9 = 18	 3 * 9 = 27	 4 * 9 = 36	 5 * 9 = 45	 6 * 9 = 54	 7 * 9 = 63	 8 * 9 = 72	 9 * 9 = 81	 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<h3 id="函数文档注释"><a href="#函数文档注释" class="headerlink" title="函数文档注释"></a>函数文档注释</h3><p>1.在开发中使用三对引号写在定义函数下方</p>
-<p>2.在函数调用位置使用快捷键CTRL+Q可以查看函数的说明信息</p>
-<p>3.注释与函数保持一定距离(习惯)</p>
-<pre class="line-numbers language-none"><code class="language-none">def ...():
-	'''注释'''
-	
-	封装代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<h3 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h3><h4 id="有参函数与无参函数"><a href="#有参函数与无参函数" class="headerlink" title="有参函数与无参函数"></a>有参函数与无参函数</h4><pre class="line-numbers language-none"><code class="language-none">def sum_2_num(num1, num2):
-    '''两数求和'''
-
-
-    result = num1 + num2
-    print('%d + %d = %d' % (num1, num2, result))
-
-sum_2_num(10, 45)
-
-运行：
-10 + 45 = 55<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>有参函数：灵活可以处理不同的值</p>
-<p>无参函数：只能处理固定的值</p>
-<hr>
-<h4 id="形参和实参"><a href="#形参和实参" class="headerlink" title="形参和实参"></a>形参和实参</h4><p>形参：定义函数时小括号中的参数，用来接收参数</p>
-<p>实参：调用函数时小括号中的参数，用来传递数据到函数内部</p>
-<h4 id="返回值return"><a href="#返回值return" class="headerlink" title="返回值return"></a>返回值return</h4><p>函数执行完成之后给调用者返回一个结果</p>
-<p>return之后的语句都不会执行</p>
-<hr>
-<h3 id="函数的嵌套调用"><a href="#函数的嵌套调用" class="headerlink" title="函数的嵌套调用"></a>函数的嵌套调用</h3><p>在函数中调用另一个函数</p>
-<pre class="line-numbers language-none"><code class="language-none">def sum_2_num(num1, num2):
-    '''两数求和'''
-
-
-    result = num1 + num2
-    return result
-
-def mul_10():
-    '''嵌套调用sum_2_num()'''
-
-    result = sum_2_num(10, 20) * 10
-    return result
-
-print(mul_10())
-
-运行结果：
-300<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<pre class="line-numbers language-none"><code class="language-none">def print_line(char, times):
-
-    print(char * times)
-
-def print_times(char, times, ans):
-
-    i = 0
-    while i &lt; ans :
-        print_line(char, times)
-        i += 1
-
-ch = input('请输入要打印的字符 :')
-times = int(input('请输入要打印的次数 :'))
-ans = int(input('请输入要打印的行数 :'))
-print_times(ch, times, ans)
-
-运行结果：
-请输入要打印的字符 :*
-请输入要打印的次数 :10
-请输入要打印的行数 :3
-**********
-**********
-**********
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2>
                 
             </div>
             <hr/>
@@ -954,7 +756,7 @@ print_times(ch, times, ans)
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wenlwei.github.io/posts/8d8e15c3.html">https://wenlwei.github.io/posts/8d8e15c3.html</a>
+                    <a href="https://wenlwei.github.io/posts/90b006b6.html">https://wenlwei.github.io/posts/90b006b6.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -992,8 +794,8 @@ print_times(ch, times, ans)
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
+                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">机器学习</span>
                                 </a>
                             
                         </div>
@@ -1511,9 +1313,56 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/90b006b6.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021440.jpg" class="responsive-img" alt="kalman">
+                        
+                        <span class="card-title">kalman</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            wenlwei
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">机器学习</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/posts/84bf5555.html">
                     <div class="card-image">
@@ -1531,9 +1380,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1547,51 +1396,6 @@ new Valine({
                     
                     <a href="/tags/python/">
                         <span class="chip bg-color">python</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/e255a10a.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928014831.jpg" class="responsive-img" alt="计算机网络">
-                        
-                        <span class="card-title">计算机网络</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-25
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            wenlwei
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
-                        <span class="chip bg-color">计算机网络</span>
                     </a>
                     
                 </div>
