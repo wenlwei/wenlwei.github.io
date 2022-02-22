@@ -4,7 +4,7 @@
   <url>
     <loc>https://wenlwei.github.io/posts/90b006b6.html</loc>
     
-    <lastmod>2022-02-21</lastmod>
+    <lastmod>2022-02-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://wenlwei.github.io/posts/97a699da.html</loc>
+    <loc>https://wenlwei.github.io/posts/9db90237.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://wenlwei.github.io/posts/9db90237.html</loc>
+    <loc>https://wenlwei.github.io/posts/97a699da.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -110,24 +110,6 @@
   </url>
   
   <url>
-    <loc>https://wenlwei.github.io/categories/index.html</loc>
-    
-    <lastmod>2022-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wenlwei.github.io/about/index.html</loc>
-    
-    <lastmod>2022-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wenlwei.github.io/google1xxxxxxx0.html</loc>
     
     <lastmod>2022-01-29</lastmod>
@@ -146,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://wenlwei.github.io/friends/index.html</loc>
+    <loc>https://wenlwei.github.io/about/index.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -156,6 +138,24 @@
   
   <url>
     <loc>https://wenlwei.github.io/census/index.html</loc>
+    
+    <lastmod>2022-01-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wenlwei.github.io/friends/index.html</loc>
+    
+    <lastmod>2022-01-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wenlwei.github.io/categories/index.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -209,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://wenlwei.github.io/List/galleries/%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/index.html</loc>
+    <loc>https://wenlwei.github.io/List/galleries/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E/index.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -218,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://wenlwei.github.io/List/galleries/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E/index.html</loc>
+    <loc>https://wenlwei.github.io/List/galleries/%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/index.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://wenlwei.github.io/List/galleries/%E5%9F%8E%E5%B8%82%E9%A3%8E%E5%85%89/index.html</loc>
+    <loc>https://wenlwei.github.io/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -254,7 +254,16 @@
   </url>
   
   <url>
-    <loc>https://wenlwei.github.io/List/galleries/%E5%91%86%E8%90%8C%E7%8C%AB%E5%92%AA/index.html</loc>
+    <loc>https://wenlwei.github.io/List/galleries/%E5%9F%8E%E5%B8%82%E9%A3%8E%E5%85%89/index.html</loc>
+    
+    <lastmod>2022-01-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wenlwei.github.io/List/galleries/%E7%82%AB%E9%85%B7%E8%B7%91%E8%BD%A6/index.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -264,6 +273,15 @@
   
   <url>
     <loc>https://wenlwei.github.io/List/galleries/%E6%B8%85%E6%96%B0%E8%8A%B1%E5%8D%89/index.html</loc>
+    
+    <lastmod>2022-01-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wenlwei.github.io/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -282,24 +300,6 @@
   
   <url>
     <loc>https://wenlwei.github.io/List/galleries/%E8%87%AA%E7%84%B6%E9%A3%8E%E6%99%AF/index.html</loc>
-    
-    <lastmod>2022-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wenlwei.github.io/List/galleries/%E7%82%AB%E9%85%B7%E8%B7%91%E8%BD%A6/index.html</loc>
-    
-    <lastmod>2022-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wenlwei.github.io/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
     
     <lastmod>2022-01-29</lastmod>
     
@@ -335,14 +335,14 @@
 
   
   <url>
-    <loc>https://wenlwei.github.io/tags/python/</loc>
+    <loc>https://wenlwei.github.io/tags/java/</loc>
     <lastmod>2022-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wenlwei.github.io/tags/java/</loc>
+    <loc>https://wenlwei.github.io/tags/python/</loc>
     <lastmod>2022-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
