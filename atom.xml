@@ -171,26 +171,6 @@
   </entry>
   
   <entry>
-    <title>如何搭建hexo博客</title>
-    <link href="https://wenlwei.github.io/posts/11759fea.html"/>
-    <id>https://wenlwei.github.io/posts/11759fea.html</id>
-    <published>2021-12-15T06:18:31.000Z</published>
-    <updated>2022-01-30T03:47:04.908Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h1><h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>这个可以在软件商店安装</p><h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>打开git Bash</p><p>分别执行</p><p>git config –global user.name “你的用户名”</p><p>git config –global user.email “你的注册邮箱”</p><p>检查是否正确</p><p>git config user.name</p><p>git config user.email</p><hr><p>执行ssh-keygen -t rsa -C “你的用户名”</p><p>三次回车后电脑会生成.ssh文件，找到id_rsa.pub将公钥复制到</p><p><a href="https://imgtu.com/i/H9yI6x"><img src="https://s4.ax1x.com/2022/01/30/H9yI6x.png" alt="H9yI6x.png"></a></p><p><a href="https://imgtu.com/i/H9y7nK"><img src="https://s4.ax1x.com/2022/01/30/H9y7nK.png" alt="H9y7nK.png"></a></p><p><a href="https://imgtu.com/i/H9yH0O"><img src="https://s4.ax1x.com/2022/01/30/H9yH0O.png" alt="H9yH0O.png"></a></p><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p><strong><a href="https://nodejs.org/">https://nodejs.org</a></strong></p><p>选择LTS，可以一直选择next</p><p>装好之后可以通过命令行</p><p><strong>node -v</strong></p><p><strong>npm -v</strong></p><p>检查是否安装完成</p><p>因为hexo博客是基于npm上，所以node.js是必要的。不过因为国内镜像比较慢所以我们就通过npm下载cnpm然后连接到淘宝镜像</p><p><strong>npm install -g cnpm –registry<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></strong></p><p><strong>cnpm -v</strong>检验</p><hr><h1 id="搭建hexo"><a href="#搭建hexo" class="headerlink" title="搭建hexo"></a>搭建hexo</h1><p>可以在cmd上执行<strong>cnpm install -g hexo-cli</strong></p><p>也可以在git Bash看自己熟悉哪一种方式</p><p><strong>hexo -v</strong></p><p>搭建好之后通过<strong>mkdir blog</strong>(文件名可以自由创建，推荐安装在C盘，D盘我错了好几次)创建一个文件夹，之后所有的操作都在这个文件夹内执行，如果在哪一步出现了问题，直接干掉blog重来就行</p><p>blog创建好之后进入blog文件</p><p>执行命令行<strong>hexo init</strong>会自动在blog文件内创立需要的文件</p><p>成功会出现Starting with…</p><p>然后执行<strong>hexo s</strong>就会在本地建立一个博客，会给你一个<strong><a href="http://localhost:4000/">http://localhost:4000</a></strong>反馈，通过他就可以进行本地访问</p><h1 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h1><p>这一步可以选择在<strong>阿里云</strong>、<strong>腾讯云</strong>、<strong>华为云</strong>等去购买域名，也可以部署在Github上</p><p>推荐搭建在Gihub上，因为**<del>免费</del>**</p><p>浏览器</p><p><a href="https://github.com/">https://github.com</a></p><p>创建一个账户，有就可以跳过</p><p>创建好之后点击Create Repository创建仓库</p><p><a href="https://imgtu.com/i/H9yb7D"><img src="https://s4.ax1x.com/2022/01/30/H9yb7D.png" alt="H9yb7D.png"></a></p><p><a href="https://imgtu.com/i/H9yoX6"><img src="https://s4.ax1x.com/2022/01/30/H9yoX6.png" alt="H9yoX6.png"></a></p><p><strong>注意</strong>：name一定是你的<strong>用户名.github.io</strong></p><p>Description可写可不写</p><p>然后点击Create</p><p><img src="C:\Users\Lenovo\blog\source_posts\如何搭建hexo博客\6.png" alt="markdown"></p><p>这是创建好的空仓库</p><p>然后cmd执行命令行cnpm install –save hexo-depolyer-git</p><p>执行notepad _config.yml</p><p>配置<a href="https://imgtu.com/i/H9yv9A"><img src="https://s4.ax1x.com/2022/01/30/H9yv9A.png" alt="H9yv9A.png"></a></p><p>黄色的建议复制ssh<a href="https://imgtu.com/i/H9yXhd"><img src="https://s4.ax1x.com/2022/01/30/H9yXhd.png" alt="H9yXhd.png"></a></p><p><strong>注意</strong>：每一个冒号后都有空格</p><p>前面都完成后就执行hexo d</p><p>在cmd界面会提醒你输入账号，密码，成功后就可以通过你的<strong>用户名.github.io</strong>进行访问</p><h1 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h1><p>cmd界面进入blog—&gt;source—&gt;_posts</p><p>执行hexo new “标题”</p><p>然后可以直接在cmd内blog—&gt;source—&gt;_posts文件下执行标题.md打开markdown编译器进行编写</p><p>也可以通过hexo new “标题”手动打开文件</p><p>每一次对blog文件进行更改后在cmd界面blog文件下执行</p><p>hexo clean</p><p>hexo g</p><p>hexo d</p><p>就可以部署到远端</p><hr>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Java类</title>
     <link href="https://wenlwei.github.io/posts/46779f67.html"/>
     <id>https://wenlwei.github.io/posts/46779f67.html</id>
@@ -209,26 +189,6 @@
     
     
     <category term="java" scheme="https://wenlwei.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://wenlwei.github.io/posts/4a17b156.html"/>
-    <id>https://wenlwei.github.io/posts/4a17b156.html</id>
-    <published>2021-12-13T01:35:29.333Z</published>
-    <updated>2022-01-29T10:46:53.396Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new "My New Post"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
     
   </entry>
   
