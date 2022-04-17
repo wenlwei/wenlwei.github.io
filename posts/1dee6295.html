@@ -644,14 +644,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    7.3k
+                    5.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    38 分
+                    30 分
                 </div>
                 
 
@@ -1338,100 +1338,7 @@ arr[索引] = 值；&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt
 
 &lt;p&gt;&lt;strong&gt;注&lt;/strong&gt;：&lt;/p&gt;
 &lt;p&gt;​    JS数组类似Java集合，长度，类型都可变&lt;/p&gt;
-&lt;p&gt;​    arr[5] = 5;&lt;/p&gt;
-&lt;p&gt;​    arr[6] = “六”&lt;/p&gt;
-&lt;p&gt;即可以通过访问的方式赋值超出定义索引的值&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.w3school.com.cn/jsref/jsref_obj_array.asp"&gt;Array的属性和方法&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="String"&gt;&lt;a href="#String" class="headerlink" title="String"&gt;&lt;/a&gt;String&lt;/h3&gt;&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;定义：
-var 变量名 = new String(s)；
-var 变量名 = s；
-var str = new Array("hello");
-var str = 'hello';
-var str = "hello";&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href="https://www.w3school.com.cn/jsref/jsref_obj_string.asp"&gt;String的属性和方法&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;trim()方法：去除两端空白&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;var str = ' aaa ';
-alert(1 + str + 1);//结果：1 aaa 1
-alert(1 + str.trim() + 1);//结果：1aaa1
-&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id="自定义对象"&gt;&lt;a href="#自定义对象" class="headerlink" title="自定义对象"&gt;&lt;/a&gt;自定义对象&lt;/h3&gt;&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;var 对象名称 = {
-    属性名称1:属性值1，
-    属性名称2:属性值2，
-    ...
-    函数名称:function(形参列表){}
-    ...
-};&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;var person = {
-    name:"张三",
-    age:20,
-    eat:function(){
-        alert("干饭");
-    }
-};
-访问：
-alert(person.name);
-alert(person.age);
-person.eat;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="BOM-浏览器对象模型"&gt;&lt;a href="#BOM-浏览器对象模型" class="headerlink" title="BOM(浏览器对象模型)"&gt;&lt;/a&gt;BOM(浏览器对象模型)&lt;/h2&gt;&lt;p&gt;组成：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Window：浏览器窗口对象 &lt;/li&gt;
-&lt;li&gt;Navigator：浏览器对象  &lt;a href="https://www.w3school.com.cn/jsref/obj_navigator.asp"&gt;Navigator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Screen：屏幕对象  &lt;a href="https://www.w3school.com.cn/jsref/obj_screen.asp"&gt;Screen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;History：历史记录对象  &lt;a href="https://www.w3school.com.cn/jsref/dom_obj_history.asp"&gt;History&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Location：地址栏对象  &lt;a href="https://www.w3school.com.cn/jsref/obj_location.asp"&gt;Location&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="Window"&gt;&lt;a href="#Window" class="headerlink" title="Window"&gt;&lt;/a&gt;Window&lt;/h3&gt;&lt;p&gt;获取：直接使用window，window.可以省略&lt;/p&gt;
-&lt;p&gt;属性：获取其他BOM对象&lt;/p&gt;
-&lt;p&gt; &lt;a href="https://www.w3school.com.cn/jsref/obj_window.asp"&gt;Window属性和方法&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;confirm()应有返回值&lt;/li&gt;
-&lt;li&gt;setTimeout(function, 毫秒值)：在一定的时间间隔后执行一个function，只执行一次&lt;/li&gt;
-&lt;li&gt;setInterval(function, 毫秒值)：在一定的时间间隔后执行一个function，循环执行&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="History"&gt;&lt;a href="#History" class="headerlink" title="History"&gt;&lt;/a&gt;History&lt;/h3&gt;&lt;p&gt;&lt;a href="https://www.w3school.com.cn/jsref/dom_obj_history.asp"&gt;History&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="Location"&gt;&lt;a href="#Location" class="headerlink" title="Location"&gt;&lt;/a&gt;Location&lt;/h3&gt;&lt;p&gt; &lt;a href="https://www.w3school.com.cn/jsref/obj_location.asp"&gt;Location&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="DOM-文档对象模型"&gt;&lt;a href="#DOM-文档对象模型" class="headerlink" title="DOM(文档对象模型)"&gt;&lt;/a&gt;DOM(文档对象模型)&lt;/h2&gt;&lt;p&gt;JavaScript通过DOM，就能对HTML进行操作&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;改变HTML元素内容&lt;/li&gt;
-&lt;li&gt;改变HTML元素样式（CSS）&lt;/li&gt;
-&lt;li&gt;对HTML DOM事件作出反应&lt;/li&gt;
-&lt;li&gt;添加和删除HTML元素&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;DOM是w3c的标准&lt;/p&gt;
-&lt;p&gt;DOM定义了访问HTML和XML文档的标准&lt;/p&gt;
-&lt;p&gt;w3c DOM标准被分为3个不同的部分：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;核心DOM：针对任何结构化文档的标准模型&lt;ol&gt;
-&lt;li&gt;Document：整个文档对象&lt;/li&gt;
-&lt;li&gt;Element：元素对象&lt;/li&gt;
-&lt;li&gt;Attribute：属性对象&lt;/li&gt;
-&lt;li&gt;Text：文本对象&lt;/li&gt;
-&lt;li&gt;Comment：注释对象&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;XML DOM：针对XML文档的标准模型&lt;/li&gt;
-&lt;li&gt;HTML DOM：针对HTML文档的标准模型&lt;ol&gt;
-&lt;li&gt;Image：&lt;img&gt;&lt;/li&gt;
-&lt;li&gt;Button：&lt;input type='button'&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="获取Element对象"&gt;&lt;a href="#获取Element对象" class="headerlink" title="获取Element对象"&gt;&lt;/a&gt;获取Element对象&lt;/h3&gt;&lt;p&gt;Element：元素对象&lt;/p&gt;
-&lt;p&gt;获取：使用Document对象的方法来获取&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;getElementByld：根据id属性值获取，返回一个Element对象&lt;/li&gt;
-&lt;li&gt;getElementsByTagName：根据标签名称获取，返回Element对象数组&lt;/li&gt;
-&lt;li&gt;getElementsByName：根据name属性值获取，返回Element对象数组&lt;/li&gt;
-&lt;li&gt;getElementsByClassName：根据class属性值获取，返回Element对象数组&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="常见HTML-Element对象的使用"&gt;&lt;a href="#常见HTML-Element对象的使用" class="headerlink" title="常见HTML Element对象的使用"&gt;&lt;/a&gt;常见HTML Element对象的使用&lt;/h3&gt;&lt;p&gt;&lt;a href="https://www.w3school.com.cn/jsref/dom_obj_anchor.asp"&gt;HTML对象&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="事件监听"&gt;&lt;a href="#事件监听" class="headerlink" title="事件监听"&gt;&lt;/a&gt;事件监听&lt;/h2&gt;</textarea></td></tr></tbody></table></form></td></tr></tbody></table>
+&lt;h2 id="BOM"&gt;&lt;a href="#BOM" class="headerlink" title="BOM"&gt;&lt;/a&gt;BOM&lt;/h2&gt;&lt;h2 id="DOM"&gt;&lt;a href="#DOM" class="headerlink" title="DOM"&gt;&lt;/a&gt;DOM&lt;/h2&gt;&lt;h2 id="事件监听"&gt;&lt;a href="#事件监听" class="headerlink" title="事件监听"&gt;&lt;/a&gt;事件监听&lt;/h2&gt;</textarea></td></tr></tbody></table></form></td></tr></tbody></table>
                 
             </div>
             <hr/>
@@ -2014,9 +1921,10 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/posts/1dee6295.html">
                     <div class="card-image">
@@ -2034,9 +1942,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -2045,6 +1953,7 @@ new Valine({
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -2334,7 +2243,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">26.4k</span>&nbsp;字
+                class="white-color">19.1k</span>&nbsp;字
             
             
             
