@@ -6,7 +6,7 @@
   <link href="https://wenlwei.cn/atom.xml" rel="self"/>
   
   <link href="https://wenlwei.cn/"/>
-  <updated>2022-09-10T10:47:40.912Z</updated>
+  <updated>2022-09-10T10:50:11.710Z</updated>
   <id>https://wenlwei.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="https://wenlwei.cn/posts/53d0684b.html"/>
+    <id>https://wenlwei.cn/posts/53d0684b.html</id>
+    <published>2022-09-10T10:49:21.000Z</published>
+    <updated>2022-09-10T10:50:11.710Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="基础指令"><a href="#基础指令" class="headerlink" title="基础指令"></a>基础指令</h1><h2 id="ls指令"><a href="#ls指令" class="headerlink" title="ls指令"></a>ls指令</h2><ol><li><p>用法1：ls</p><p>含义：列出当前工作目录下的所有文件夹或文件的名称</p></li></ol><p><img src="https://s1.ax1x.com/2022/08/11/vGZdPA.png"></p><p>​    $\textcolor{red}{注：蓝色表示文件夹，黑色表示文件，绿色表示其权限为所有权限}$</p><ol><li><p>用法2：ls 路径</p><p>含义：列出指定目录下的所有文件夹或文件的名称</p><p>$\textcolor{blueviolet}{相对路径}$</p></li></ol><p><img src="https://s1.ax1x.com/2022/08/11/vGZBxP.md.png" alt="vGZBxP.md.png"></p><p>​    $\textcolor{blueviolet}{绝对路径}$![](D:\Desktop\Linux\屏幕截图 2022-08-11 135213.png)</p><p>​    $\textcolor{red}{相对路径：}$$\textcolor{blue}{首先得有一个参照物（一般是当前工作路径）}$</p><p>​        $\textcolor{orange}{相对路径写法：通常会用两个符号两个符号“./”，“../”}$</p><p>​            $\textcolor{orange}{./：当前目录}$</p><p>​            $\textcolor{orange}{../：上级目录}$</p><p>​                <img src="https://s1.ax1x.com/2022/08/11/vGZ02t.png"></p><p>​    $\textcolor{red}{绝对路径：}$$\textcolor{blue}{不需要参照物，直接从跟“/”开始寻找}$</p><ol><li><p>ls常见语法</p><ol><li><p>ls -l （路径）</p></li><li><p>ls -la （路径）</p><p>参数：</p><p>-l：表示list，以详细列表的形式展示</p><p><img src="https://s1.ax1x.com/2022/09/10/vOkQET.png"></p><p>-a：表示显示的所有文件/文件夹</p><p><img src="https://s1.ax1x.com/2022/09/10/vOk15F.png"></p><p>$\textcolor{red}{第一列字符表示文档类型，“-”表示文件，“d“表示文件夹}$</p><p>$\textcolor{blue}{Linux中隐藏文件一般以”.“开头}$</p></li></ol></li><li><p>#ls -lh （路径）</p><p>含义：列出（指定路径）下的所有文件/文件夹，以列表的形式并显示大小</p><p><img src="https://s1.ax1x.com/2022/09/10/vOkKbV.png"><img src="https://s1.ax1x.com/2022/09/10/vOk8C4.png"></p><p><img src="https://s1.ax1x.com/2022/09/10/vOklUU.png"></p></li></ol><h2 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h2><p>含义：打印当前工作目录</p><h2 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h2><p>含义：切换当前工作目录</p><p>语法：cd 路径</p><p>cd ~：$\textcolor{red}{快速进入当前用户的家目录}$</p><h2 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h2><p>含义：创建目录</p><p>语法：mkdir 路径</p><p><img src="https://s1.ax1x.com/2022/09/10/vOkG8J.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="linux 虚拟机" scheme="https://wenlwei.cn/tags/linux-%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>组成原理</title>
