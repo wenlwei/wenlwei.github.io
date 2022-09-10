@@ -3,11 +3,11 @@
   <title>wenlwei</title>
   
   <subtitle>wenlweiの博客</subtitle>
-  <link href="https://wenlwei.github.io/atom.xml" rel="self"/>
+  <link href="https://wenlwei.cn/atom.xml" rel="self"/>
   
-  <link href="https://wenlwei.github.io/"/>
-  <updated>2022-04-17T06:42:26.454Z</updated>
-  <id>https://wenlwei.github.io/</id>
+  <link href="https://wenlwei.cn/"/>
+  <updated>2022-09-10T10:47:40.912Z</updated>
+  <id>https://wenlwei.cn/</id>
   
   <author>
     <name>wenlwei</name>
@@ -17,9 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>组成原理</title>
+    <link href="https://wenlwei.cn/posts/86ed739c.html"/>
+    <id>https://wenlwei.cn/posts/86ed739c.html</id>
+    <published>2022-09-10T10:45:22.000Z</published>
+    <updated>2022-09-10T10:47:40.912Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="第一台计算机"><a href="#第一台计算机" class="headerlink" title="第一台计算机"></a>第一台计算机</h2><p>第一台电子数字计算机：ENIAC（1946）</p><p>逻辑元件：电子管</p><p>18000多个电子管</p><p>十进制</p><p>5000次/秒</p><p>不具备自动执行程序</p><p><strong>发展历程</strong>：</p><table><thead><tr><th align="center">发展阶段</th><th align="center">时间</th><th align="center">逻辑元件</th><th align="center">速度(次/秒)</th><th align="center">内存</th><th align="center">外存</th></tr></thead><tbody><tr><td align="center">第一代</td><td align="center">1946-1957</td><td align="center">电子管</td><td align="center">几千-几万</td><td align="center">汞延迟线、磁鼓、纸袋</td><td align="center">穿孔卡片、纸袋</td></tr><tr><td align="center">第二代</td><td align="center">1958-1964</td><td align="center">晶体管</td><td align="center">几万-几十万</td><td align="center">磁芯存储器</td><td align="center">磁带</td></tr><tr><td align="center">第三代</td><td align="center">1967-1971</td><td align="center">中小规模集成电路</td><td align="center">几十万-几百万</td><td align="center">半导体存储器</td><td align="center">磁带、磁盘</td></tr><tr><td align="center">第四代</td><td align="center">1972-</td><td align="center">大规模、超大规模集成电路</td><td align="center">上千万-万亿</td><td align="center">半导体存储器</td><td align="center">磁带、磁盘、光盘、半导体存储器</td></tr></tbody></table><p><strong>总结</strong><img src="https://s1.ax1x.com/2022/09/10/vOAAZ6.png"></p><h2 id="计算机硬件的基本组成"><a href="#计算机硬件的基本组成" class="headerlink" title="计算机硬件的基本组成"></a>计算机硬件的基本组成</h2><ol><li>冯诺依曼计算机结构</li></ol><p><img src="https://s1.ax1x.com/2022/09/10/vOAPMR.png"></p><ol><li>冯诺依曼计算机特点：<ol><li>计算机由五大部件组成（输入设备、运算器、存储器、控制器、输出设备）</li><li>指令与数据以<strong>同等地位</strong>（==二级制==）存于存储器，可按地址寻访</li><li>指令和数据用二进制表示</li><li>指令由操作码和地址吗组成</li><li>存储程序</li><li>以运算器为中心</li></ol></li><li>现代计算机结构</li></ol><p><img src="https://s1.ax1x.com/2022/09/10/vOAVIO.png"></p><p><img src="https://s1.ax1x.com/2022/09/10/vOAmJe.png"></p><p><img src="https://s1.ax1x.com/2022/09/10/vOAnRH.png"></p><p><strong>总结</strong>：</p><p><img src="https://s1.ax1x.com/2022/09/10/vOAuzd.png"></p><h3 id="各个硬件的工作原理"><a href="#各个硬件的工作原理" class="headerlink" title="各个硬件的工作原理"></a>各个硬件的工作原理</h3><h4 id="主存储器"><a href="#主存储器" class="headerlink" title="主存储器"></a>主存储器</h4><ol><li><p>主存储器的基本组成</p><ol><li><p>存储体：由一些存储元件构成，用于存放二进制数据（<strong>按地址存储</strong>）</p><ol><li>存储体被划分为多个$\textcolor{red}{存储单元}$对应MDR</li><li>每一个<strong>存储单元</strong>会存放<strong>一串二进制代码</strong>——$\textcolor{red}{存储字word：存储单元中二进制代码的组合}$</li><li>每一个存储字包含多少个<strong>二进制位</strong>——$\textcolor{red}{存储字长：存储单元中二进制代码的位数}$（一般为8bit整数倍）</li><li>每一个存储单元都对应一个地址（从0开始）对应MAR</li></ol><p>存储元：用于存储二进制的电子元件，每个存储元可存1bit</p></li><li><p>MAR-存储$\textcolor{red}{地址寄存器}$（寄存器:存放二级制数据）：MAR位数反映多少个存储单元</p></li><li><p>MDR-存储$\textcolor{red}{数据寄存器}$：MDR位数=存储字长</p></li></ol><p><img src="https://s1.ax1x.com/2022/09/10/vOA9z9.png"></p><p><strong>例：</strong></p><p>MAR=4位，则总共有$2^4$个存储单元</p><p>$\textcolor{red}{4位二进制可以组合2^4个数}$</p><p>MDR=16位。则每个存储单元可以存放16个bit即<strong>1word=16bit</strong></p><p>1字节（byte）=8比特（bit)</p><hr><h4 id="运算器"><a href="#运算器" class="headerlink" title="运算器"></a>运算器</h4><ol><li>运算器：用来实现算术运算、逻辑运算</li></ol><p><img src="https://s1.ax1x.com/2022/09/10/vOAFqx.png"></p><ol><li>运算器的基本组成<ol><li>ACC：累加器，用于存放操作数，或运算结果。</li><li>MQ：乘商寄存器，在乘、除运算时，用于存放操作数或运算结果。</li><li>X：通用的操作数寄存器，用于存放操作数。</li><li><strong>ALU</strong>：算术逻辑单元，通过内部复杂的电路实现算术运算、逻辑运算</li></ol></li></ol></li></ol><p><img src="https://s1.ax1x.com/2022/09/10/vOAeiD.png"></p><h4 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h4><ol><li>控制器</li></ol><p><img src="https://s1.ax1x.com/2022/09/10/vOAis1.png"></p><ol><li>控制器的基本组成<ol><li><strong>CU</strong>：控制单元，分析指令，给出控制信号</li><li>IR：指令寄存器，存放当前执行的指令</li><li>PC：程序计数器，存放下一条指令地址，有自动加1功能</li></ol></li><li>完成一条指令<ol><li>取指令——PC</li><li>分析指令——IR</li><li>执行指令——CU</li></ol></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="计算机" scheme="https://wenlwei.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>学习笔记——三剑客</title>
-    <link href="https://wenlwei.github.io/posts/1dee6295.html"/>
-    <id>https://wenlwei.github.io/posts/1dee6295.html</id>
+    <link href="https://wenlwei.cn/posts/1dee6295.html"/>
+    <id>https://wenlwei.cn/posts/1dee6295.html</id>
     <published>2022-04-17T05:19:40.000Z</published>
     <updated>2022-04-17T06:42:26.454Z</updated>
     
@@ -34,14 +56,14 @@
     
     
     
-    <category term="HTML，CSS，web" scheme="https://wenlwei.github.io/tags/HTML%EF%BC%8CCSS%EF%BC%8Cweb/"/>
+    <category term="HTML，CSS，web" scheme="https://wenlwei.cn/tags/HTML%EF%BC%8CCSS%EF%BC%8Cweb/"/>
     
   </entry>
   
   <entry>
     <title>third-day-python</title>
-    <link href="https://wenlwei.github.io/posts/6f53ebbf.html"/>
-    <id>https://wenlwei.github.io/posts/6f53ebbf.html</id>
+    <link href="https://wenlwei.cn/posts/6f53ebbf.html"/>
+    <id>https://wenlwei.cn/posts/6f53ebbf.html</id>
     <published>2022-03-01T03:45:36.000Z</published>
     <updated>2022-03-02T03:45:14.181Z</updated>
     
@@ -56,14 +78,14 @@
     
     
     
-    <category term="python" scheme="https://wenlwei.github.io/tags/python/"/>
+    <category term="python" scheme="https://wenlwei.cn/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>KNN</title>
-    <link href="https://wenlwei.github.io/posts/7c10b52f.html"/>
-    <id>https://wenlwei.github.io/posts/7c10b52f.html</id>
+    <link href="https://wenlwei.cn/posts/7c10b52f.html"/>
+    <id>https://wenlwei.cn/posts/7c10b52f.html</id>
     <published>2022-02-28T08:13:10.000Z</published>
     <updated>2022-02-28T11:50:58.135Z</updated>
     
@@ -78,14 +100,14 @@
     
     
     
-    <category term="机器学习" scheme="https://wenlwei.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://wenlwei.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>first day-python</title>
-    <link href="https://wenlwei.github.io/posts/84bf5555.html"/>
-    <id>https://wenlwei.github.io/posts/84bf5555.html</id>
+    <link href="https://wenlwei.cn/posts/84bf5555.html"/>
+    <id>https://wenlwei.cn/posts/84bf5555.html</id>
     <published>2022-02-06T13:29:03.000Z</published>
     <updated>2022-02-07T10:54:21.258Z</updated>
     
@@ -100,14 +122,14 @@
     
     
     
-    <category term="python" scheme="https://wenlwei.github.io/tags/python/"/>
+    <category term="python" scheme="https://wenlwei.cn/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>second day_python</title>
-    <link href="https://wenlwei.github.io/posts/8d8e15c3.html"/>
-    <id>https://wenlwei.github.io/posts/8d8e15c3.html</id>
+    <link href="https://wenlwei.cn/posts/8d8e15c3.html"/>
+    <id>https://wenlwei.cn/posts/8d8e15c3.html</id>
     <published>2022-02-06T09:27:49.000Z</published>
     <updated>2022-03-01T03:57:56.421Z</updated>
     
@@ -122,14 +144,14 @@
     
     
     
-    <category term="python" scheme="https://wenlwei.github.io/tags/python/"/>
+    <category term="python" scheme="https://wenlwei.cn/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>计算机网络</title>
-    <link href="https://wenlwei.github.io/posts/e255a10a.html"/>
-    <id>https://wenlwei.github.io/posts/e255a10a.html</id>
+    <link href="https://wenlwei.cn/posts/e255a10a.html"/>
+    <id>https://wenlwei.cn/posts/e255a10a.html</id>
     <published>2021-12-25T05:29:23.000Z</published>
     <updated>2022-01-30T11:16:18.024Z</updated>
     
@@ -144,14 +166,14 @@
     
     
     
-    <category term="计算机网络" scheme="https://wenlwei.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <category term="计算机网络" scheme="https://wenlwei.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>日撸Java2</title>
-    <link href="https://wenlwei.github.io/posts/97a699da.html"/>
-    <id>https://wenlwei.github.io/posts/97a699da.html</id>
+    <link href="https://wenlwei.cn/posts/97a699da.html"/>
+    <id>https://wenlwei.cn/posts/97a699da.html</id>
     <published>2021-12-20T15:28:48.000Z</published>
     <updated>2022-01-29T10:46:53.396Z</updated>
     
@@ -166,14 +188,14 @@
     
     
     
-    <category term="java" scheme="https://wenlwei.github.io/tags/java/"/>
+    <category term="java" scheme="https://wenlwei.cn/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>日撸Java 1</title>
-    <link href="https://wenlwei.github.io/posts/9db90237.html"/>
-    <id>https://wenlwei.github.io/posts/9db90237.html</id>
+    <link href="https://wenlwei.cn/posts/9db90237.html"/>
+    <id>https://wenlwei.cn/posts/9db90237.html</id>
     <published>2021-12-17T14:30:58.000Z</published>
     <updated>2022-01-29T10:46:53.396Z</updated>
     
@@ -188,14 +210,14 @@
     
     
     
-    <category term="Java" scheme="https://wenlwei.github.io/tags/Java/"/>
+    <category term="Java" scheme="https://wenlwei.cn/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>机器学习</title>
-    <link href="https://wenlwei.github.io/posts/498ab7d9.html"/>
-    <id>https://wenlwei.github.io/posts/498ab7d9.html</id>
+    <link href="https://wenlwei.cn/posts/498ab7d9.html"/>
+    <id>https://wenlwei.cn/posts/498ab7d9.html</id>
     <published>2021-12-16T14:51:18.000Z</published>
     <updated>2022-01-30T11:15:58.043Z</updated>
     
@@ -210,14 +232,14 @@
     
     
     
-    <category term="机器学习" scheme="https://wenlwei.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://wenlwei.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>Java类</title>
-    <link href="https://wenlwei.github.io/posts/46779f67.html"/>
-    <id>https://wenlwei.github.io/posts/46779f67.html</id>
+    <link href="https://wenlwei.cn/posts/46779f67.html"/>
+    <id>https://wenlwei.cn/posts/46779f67.html</id>
     <published>2021-12-14T13:51:50.000Z</published>
     <updated>2022-01-30T11:05:12.655Z</updated>
     
@@ -232,7 +254,7 @@
     
     
     
-    <category term="java" scheme="https://wenlwei.github.io/tags/java/"/>
+    <category term="java" scheme="https://wenlwei.cn/tags/java/"/>
     
   </entry>
   
