@@ -637,21 +637,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-07
+                    2023-03-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    3.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    16 分
                 </div>
                 
 
@@ -669,7 +669,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="first-python"><a href="#first-python" class="headerlink" title="first python"></a>first python</h1><h2 id="pycharm调式工具"><a href="#pycharm调式工具" class="headerlink" title="pycharm调式工具"></a>pycharm调式工具</h2><h3 id="Step-Over"><a href="#Step-Over" class="headerlink" title="Step Over"></a>Step Over</h3><p>F8 可以单步执行代码 会把函数看成一段代码执行</p>
+                <h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><h2 id="pycharm调式工具"><a href="#pycharm调式工具" class="headerlink" title="pycharm调式工具"></a>pycharm调式工具</h2><h3 id="Step-Over"><a href="#Step-Over" class="headerlink" title="Step Over"></a>Step Over</h3><p>F8 可以单步执行代码 会把函数看成一段代码执行</p>
 <h3 id="Step-Into"><a href="#Step-Into" class="headerlink" title="Step Into"></a>Step Into</h3><p>F7 可以单步执行代码 如果是函数会进入函数内部</p>
 <h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><pre class="line-numbers language-none"><code class="language-none"># 注释
 # 单行注释
@@ -1174,6 +1174,530 @@ else :
 玩家选择：剪刀
 AI选择：布
 玩家胜利，撒花<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><p>while 条件(判断 计数器 是否达到 目标次数):</p>
+<p>​    条件满足时，做到事1</p>
+<p>​    条件满足时，做的事2</p>
+<p>​    …</p>
+<p>​    处理条件(计算球+1)</p>
+<pre class="line-numbers language-none"><code class="language-none">i = 0
+while i &lt; 5 :
+    print('hello world')
+    i+=1
+print('i = %d' % i)
+
+运行:
+hello world
+hello world
+hello world
+hello world
+hello world
+i = 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="0-100求和"><a href="#0-100求和" class="headerlink" title="0~100求和"></a>0~100求和</h4><pre class="line-numbers language-none"><code class="language-none">i = 0
+sum = 0
+while i &lt;= 100 :
+    sum += i
+    i+=1
+print('sum = %d' % sum)
+
+运行:
+5050<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="0-100偶数求和"><a href="#0-100偶数求和" class="headerlink" title="0~100偶数求和"></a>0~100偶数求和</h4><pre class="line-numbers language-none"><code class="language-none">i = 0
+sum = 0
+while i &lt;= 100 :
+    if i % 2 == 0 :
+        sum += i
+    i+=1
+print('sum = %d' % sum)
+
+运行:
+2550<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><p>for i in range(循环次数):</p>
+<p>​    …</p>
+<p>​    …</p>
+<h3 id="break和continue"><a href="#break和continue" class="headerlink" title="break和continue"></a>break和continue</h3><h4 id="break"><a href="#break" class="headerlink" title="break"></a>break</h4><p>满足某条件时，<strong>退出循环</strong></p>
+<hr>
+<h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h4><p>满足某条件时，<strong>退出当前循环</strong>，开始下一次循环</p>
+<hr>
+<pre class="line-numbers language-none"><code class="language-none">i = 0
+sum = 0
+while i &lt;= 5 :
+    sum += i
+    if sum &gt;= 3 :
+        break
+    i+=1
+
+j = 0
+ans = 0
+while j&lt;=5 :
+    ans += j
+    if ans == 3:
+        continue
+    j+=1
+
+print('sum = %d,i = %d' % (sum,i))
+print('ans = %d,j = %d' % (ans,j))
+
+运行：
+sum = 3,i = 2
+ans = 17,j = 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="循环嵌套"><a href="#循环嵌套" class="headerlink" title="循环嵌套"></a>循环嵌套</h2><h3 id="打印小星星"><a href="#打印小星星" class="headerlink" title="打印小星星"></a>打印小星星</h3><pre class="line-numbers language-none"><code class="language-none">i = 1
+s_tr = '*'
+while i &lt;= 5 :
+    print(s_tr*i)
+    i+=1
+
+运行：
+*
+**
+***
+****
+*****<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<pre class="line-numbers language-none"><code class="language-none">i = 0
+j = 0
+while i &lt; 5 :
+    j = 0
+    while j &lt;= i :
+        print('*',end='')
+        j += 1
+    print('')
+    i += 1
+
+运行：
+*
+**
+***
+****
+*****<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="打印九九乘法表"><a href="#打印九九乘法表" class="headerlink" title="打印九九乘法表"></a>打印九九乘法表</h3><pre class="line-numbers language-none"><code class="language-none">i = 1
+while i &lt;= 9 :
+    j = 1
+    while j &lt;= i :
+        
+        # 打印每行
+        print('%d * %d = %d\t' % (j,i,i * j),end=' ')
+
+        j += 1
+    i += 1
+    print('')
+    
+运行：
+1 * 1 = 1	
+1 * 2 = 2	2 * 2 = 4	
+1 * 3 = 3	2 * 3 = 6	3 * 3 = 9	
+1 * 4 = 4	2 * 4 = 8	3 * 4 = 12	4 * 4 = 16	
+1 * 5 = 5	2 * 5 = 10	3 * 5 = 15	4 * 5 = 20	5 * 5 = 25	
+1 * 6 = 6	2 * 6 = 12	3 * 6 = 18	4 * 6 = 24	5 * 6 = 30	6 * 6 = 36	
+1 * 7 = 7	2 * 7 = 14	3 * 7 = 21	4 * 7 = 28	5 * 7 = 35	6 * 7 = 42	7 * 7 = 49	
+1 * 8 = 8	2 * 8 = 16	3 * 8 = 24	4 * 8 = 32	5 * 8 = 40	6 * 8 = 48	7 * 8 = 56	8 * 8 = 64	
+1 * 9 = 9	2 * 9 = 18	3 * 9 = 27	4 * 9 = 36	5 * 9 = 45	6 * 9 = 54	7 * 9 = 63	8 * 9 = 72	9 * 9 = 81	<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>定义函数——**<em>封装**</em> 独立的功能</p>
+<p>调用函数——享受**<em>封装**</em> 的成功</p>
+<p>函数使得效率提高及代码的**<em>重用**</em></p>
+<h3 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h3><p>关键字**<em>def**</em></p>
+<p>函数名命名规则：</p>
+<p>​    字母，数字，下划线随意组合</p>
+<p>​    不能以数字开头</p>
+<p>​    不能以关键字命名</p>
+<pre class="line-numbers language-none"><code class="language-none"># 只是封装不会主动执行
+def 函数名():
+	封装代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h3><h4 id="创建一个新的python文件"><a href="#创建一个新的python文件" class="headerlink" title="创建一个新的python文件"></a>创建一个新的python文件</h4><p>导入工具包</p>
+<p>关键字**<em>import**</em></p>
+<p>使用函数</p>
+<p>文件名.函数名</p>
+<pre class="line-numbers language-none"><code class="language-none">import 文件名
+
+文件名.函数名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h4 id="或者在原文件上执行"><a href="#或者在原文件上执行" class="headerlink" title="或者在原文件上执行"></a>或者在原文件上执行</h4><pre class="line-numbers language-none"><code class="language-none">def 函数名():
+	封装代码
+
+# 调用函数
+函数名()
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="示例九九乘法表"><a href="#示例九九乘法表" class="headerlink" title="示例九九乘法表"></a>示例九九乘法表</h3><pre class="line-numbers language-none"><code class="language-none">def mul_tab():
+    i = 1
+    while i &lt;= 9:
+        j = 1
+        while j &lt;= i:
+            # 打印每行
+            print('%d * %d = %d\t' % (j, i, i * j), end=' ')
+
+            j += 1
+        i += 1
+        print('')<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<pre class="line-numbers language-none"><code class="language-none">import mul_tab
+
+mul_tab.mul_tab()
+
+运行：
+1 * 1 = 1	 
+1 * 2 = 2	 2 * 2 = 4	 
+1 * 3 = 3	 2 * 3 = 6	 3 * 3 = 9	 
+1 * 4 = 4	 2 * 4 = 8	 3 * 4 = 12	 4 * 4 = 16	 
+1 * 5 = 5	 2 * 5 = 10	 3 * 5 = 15	 4 * 5 = 20	 5 * 5 = 25	 
+1 * 6 = 6	 2 * 6 = 12	 3 * 6 = 18	 4 * 6 = 24	 5 * 6 = 30	 6 * 6 = 36	 
+1 * 7 = 7	 2 * 7 = 14	 3 * 7 = 21	 4 * 7 = 28	 5 * 7 = 35	 6 * 7 = 42	 7 * 7 = 49	 
+1 * 8 = 8	 2 * 8 = 16	 3 * 8 = 24	 4 * 8 = 32	 5 * 8 = 40	 6 * 8 = 48	 7 * 8 = 56	 8 * 8 = 64	 
+1 * 9 = 9	 2 * 9 = 18	 3 * 9 = 27	 4 * 9 = 36	 5 * 9 = 45	 6 * 9 = 54	 7 * 9 = 63	 8 * 9 = 72	 9 * 9 = 81	 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="函数文档注释"><a href="#函数文档注释" class="headerlink" title="函数文档注释"></a>函数文档注释</h3><p>1.在开发中使用三对引号写在定义函数下方</p>
+<p>2.在函数调用位置使用快捷键CTRL+Q可以查看函数的说明信息</p>
+<p>3.注释与函数保持一定距离(习惯)</p>
+<pre class="line-numbers language-none"><code class="language-none">def ...():
+	'''注释'''
+	
+	封装代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h3 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h3><h4 id="有参函数与无参函数"><a href="#有参函数与无参函数" class="headerlink" title="有参函数与无参函数"></a>有参函数与无参函数</h4><pre class="line-numbers language-none"><code class="language-none">def sum_2_num(num1, num2):
+    '''两数求和'''
+
+
+    result = num1 + num2
+    print('%d + %d = %d' % (num1, num2, result))
+
+sum_2_num(10, 45)
+
+运行：
+10 + 45 = 55<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>有参函数：灵活可以处理不同的值</p>
+<p>无参函数：只能处理固定的值</p>
+<hr>
+<h4 id="形参和实参"><a href="#形参和实参" class="headerlink" title="形参和实参"></a>形参和实参</h4><p>形参：定义函数时小括号中的参数，用来接收参数</p>
+<p>实参：调用函数时小括号中的参数，用来传递数据到函数内部</p>
+<h4 id="返回值return"><a href="#返回值return" class="headerlink" title="返回值return"></a>返回值return</h4><p>函数执行完成之后给调用者返回一个结果</p>
+<p>return之后的语句都不会执行</p>
+<hr>
+<h3 id="函数的嵌套调用"><a href="#函数的嵌套调用" class="headerlink" title="函数的嵌套调用"></a>函数的嵌套调用</h3><p>在函数中调用另一个函数</p>
+<pre class="line-numbers language-none"><code class="language-none">def sum_2_num(num1, num2):
+    '''两数求和'''
+
+
+    result = num1 + num2
+    return result
+
+def mul_10():
+    '''嵌套调用sum_2_num()'''
+
+    result = sum_2_num(10, 20) * 10
+    return result
+
+print(mul_10())
+
+运行结果：
+300<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<pre class="line-numbers language-none"><code class="language-none">def print_line(char, times):
+
+    print(char * times)
+
+def print_times(char, times, ans):
+
+    i = 0
+    while i &lt; ans :
+        print_line(char, times)
+        i += 1
+
+ch = input('请输入要打印的字符 :')
+times = int(input('请输入要打印的次数 :'))
+ans = int(input('请输入要打印的行数 :'))
+print_times(ch, times, ans)
+
+运行结果：
+请输入要打印的字符 :*
+请输入要打印的次数 :10
+请输入要打印的行数 :3
+**********
+**********
+**********
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表（list）用于储存一串信息，索引从0开始，数据之间用逗号分割</p>
+<pre class="line-numbers language-none"><code class="language-none">"""
+
+作者：wenlwei
+
+"""
+# 列表
+list_0 = ['0', '1', '2', '3', '4', '5']
+print(list_0)
+for i in range(6):
+    print(list_0[i])
+    
+运行结果：
+['0', '1', '2', '3', '4', '5']
+0
+1
+2
+3
+4
+5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="列表常用操作"><a href="#列表常用操作" class="headerlink" title="列表常用操作"></a>列表常用操作</h3><pre class="line-numbers language-none"><code class="language-none">"""
+
+作者：wenlwei
+
+"""
+# 列表
+list_0 = ['0', '1', '3', '2', '4', '5']
+print(list_0)
+'''
+for i in range(6):
+    print(list_0[i])
+'''
+
+# 反转
+list_0.reverse()
+for i in range(6):
+    print(list_0[i],end=' ')
+print()
+
+# 升序
+list_0.sort()
+for i in range(6):
+    print(list_0[i],end=' ')
+print()
+# 降序
+list_0.sort(reverse=True)
+for i in range(6):
+    print(list_0[i],end=' ')
+print()
+
+运行结果：
+['0', '1', '3', '2', '4', '5']
+5 4 2 3 1 0 
+0 1 2 3 4 5 
+5 4 3 2 1 0 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<pre class="line-numbers language-none"><code class="language-none">"""
+
+作者：wenlwei
+
+"""
+
+# 列表
+list_0 = [0, 1, 3, 2, 2, 5]
+print(list_0)
+
+# 获取数据第一次出现的索引
+print(list_0.index(3))
+
+# 在指定位置插入数据
+list_0.insert(6, 7)
+print(list_0)
+
+# 在末尾添加数据
+list_0.append(10)
+print(list_0)
+
+# 将列表1的数据添加到列表2
+list_1 = [12]
+list_1.extend(list_0)
+print(list_0)
+print(list_1)
+
+# 删除指定索引的数据
+list_0.pop(4)
+print(list_0)
+del list_0[2]
+
+# 删除末尾数据
+list_0.pop()
+print(list_0)
+
+# 删除第一个出现的指定数据
+list_1.remove(2)
+print(list_1)
+
+# 统计列表长度
+print(len(list_1))
+
+# 统计数据在列表中出现的次数
+print(list_0.count(1))
+
+运行结果：
+[0, 1, 3, 2, 2, 5]
+2
+[0, 1, 3, 2, 2, 5, 7]
+[0, 1, 3, 2, 2, 5, 7, 10]
+[0, 1, 3, 2, 2, 5, 7, 10]
+[12, 0, 1, 3, 2, 2, 5, 7, 10]
+[0, 1, 3, 2, 5, 7, 10]
+[0, 1, 2, 5, 7]
+[12, 0, 1, 3, 2, 5, 7, 10]
+8
+1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<table>
+<thead>
+<tr>
+<th align="center">函数名</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">list.reverse</td>
+<td align="center">反转</td>
+</tr>
+<tr>
+<td align="center">list.sort</td>
+<td align="center">升序排序</td>
+</tr>
+<tr>
+<td align="center">list.sort(reverse=True)</td>
+<td align="center">降序排序</td>
+</tr>
+<tr>
+<td align="center">list.index(数据)</td>
+<td align="center">获取数据第一次出现的索引</td>
+</tr>
+<tr>
+<td align="center">list.insert(索引, 数据)</td>
+<td align="center">在指定位置插入数据</td>
+</tr>
+<tr>
+<td align="center">list.append()</td>
+<td align="center">在末尾添加数据</td>
+</tr>
+<tr>
+<td align="center">list2.extend(list1)</td>
+<td align="center">将列表1的数据添加到列表2</td>
+</tr>
+<tr>
+<td align="center">list.pop（索引）</td>
+<td align="center">删除指定索引的数据</td>
+</tr>
+<tr>
+<td align="center">list.pop</td>
+<td align="center">删除末尾数据</td>
+</tr>
+<tr>
+<td align="center">list.remove()</td>
+<td align="center">删除第一个出现的指定数据</td>
+</tr>
+<tr>
+<td align="center">del list[]</td>
+<td align="center">删除指定索引的数据</td>
+</tr>
+<tr>
+<td align="center">list.clear</td>
+<td align="center">清空列表</td>
+</tr>
+<tr>
+<td align="center">len()</td>
+<td align="center">统计列表长度</td>
+</tr>
+<tr>
+<td align="center">list.count()</td>
+<td align="center">统计数据在列表中的出现次数</td>
+</tr>
+</tbody></table>
+<h3 id="列表的循环遍历（迭代遍历）"><a href="#列表的循环遍历（迭代遍历）" class="headerlink" title="列表的循环遍历（迭代遍历）"></a>列表的循环遍历（迭代遍历）</h3><pre class="line-numbers language-none"><code class="language-none">"""
+
+作者：wenlwei
+
+"""
+
+# 列表
+list_0 = [0, 1, 3, 2, 2, 5]
+print(list_0)
+for i in list_0:
+    print(i, end=' ')
+
+运行结果：
+[0, 1, 3, 2, 2, 5]
+0 1 3 2 2 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2><p>Tuple（元组）类似列表，区别在于元组的元素不能修改</p>
+<p>元组表示多个元素组成的序列，用于存储一串信息，数据之间用逗号隔开</p>
+<p>元组用()定义，索引从0开始（注：不用括号，用逗号隔开也可以）</p>
+<pre class="line-numbers language-none"><code class="language-none">"""
+
+作者：wenlwei
+
+"""
+# 元组
+info_1 = 5, 1, 2
+info_2 = (1, 2)
+print(type(info_2))
+print(type(info_1))
+
+运行结果：
+&lt;class 'tuple'&gt;
+&lt;class 'tuple'&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>空元组Tuple = ()</p>
+<p>元组中只有一个元素时，在元素后要添加逗号</p>
+<h3 id="元组常用操作"><a href="#元组常用操作" class="headerlink" title="元组常用操作"></a>元组常用操作</h3><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">len()</td>
+<td align="center">统计元组长度</td>
+</tr>
+<tr>
+<td align="center">Tuple.count()</td>
+<td align="center">统计数据在元组中的出现次数</td>
+</tr>
+<tr>
+<td align="center">Tuple.index(数据)</td>
+<td align="center">获取数据第一次出现的索引</td>
+</tr>
+</tbody></table>
+<h3 id="循环遍历"><a href="#循环遍历" class="headerlink" title="循环遍历"></a>循环遍历</h3><pre class="line-numbers language-none"><code class="language-none">"""
+
+作者：wenlwei
+
+"""
+# 元组
+info_1 = 5, 1, 2
+info_2 = (1, 2)
+# print(type(info_2))
+# print(type(info_1))
+for i in info_2:
+    print(i)
+运行结果：
+1
+2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>注：在实际开发中，元组的遍历不是很常用</p>
+<p>通常元组中存储的数据不是同一类型的，在循环体中不易整体操作</p>
+
                 
             </div>
             <hr/>
@@ -1805,13 +2329,13 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/8d8e15c3.html">
+                <a href="/posts/e255a10a.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="second day_python">
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928014831.jpg" class="responsive-img" alt="计算机网络">
                         
-                        <span class="card-title">second day_python</span>
+                        <span class="card-title">计算机网络</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1822,7 +2346,7 @@ new Valine({
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-25
                             </span>
                         <span class="publish-author">
                             
@@ -1835,8 +2359,8 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">计算机网络</span>
                     </a>
                     
                 </div>
@@ -2076,7 +2600,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.5k</span>&nbsp;字
+                class="white-color">19.1k</span>&nbsp;字
             
             
             
@@ -2423,12 +2947,12 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":225,"height":325},"mobile":{"show":false},"log":false});</script><script>
+<script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":225,"height":325},"mobile":{"show":false},"log":false});</script></body>
 
 </html>
