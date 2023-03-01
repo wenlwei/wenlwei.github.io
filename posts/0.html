@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="学习笔记——三剑客, 计算机">
+    <meta name="keywords" content="计算机">
     <meta name="description" content="本科">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>学习笔记——三剑客 | wenlwei</title>
+    <title>wenlwei</title>
 
     <link rel="icon" type="image/jpeg" href="https://s4.ax1x.com/2022/01/29/HpyLa4.jpg">
 
@@ -488,12 +488,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021440.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">学习笔记——三剑客</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -612,13 +612,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/HTML%EF%BC%8CCSS%EF%BC%8Cweb/">
-                                <span class="chip bg-color">HTML，CSS，web</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -630,28 +626,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-17
+                    2023-03-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-17
+                    2023-03-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.7k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    30 分
+                    8 分
                 </div>
                 
 
@@ -669,676 +665,253 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML"></a>什么是HTML</h1><p>HTML：超文本标记语言</p>
-<p>​    超文本：超越了文本限制。除了文字，还可以定义图片，音频等内容。</p>
-<p>​    标记语言：由标签构成的语言。</p>
-<p>HTML运行在浏览器上，标签由浏览器解析</p>
-<p>W3C标准：网页主要由三部分组成</p>
-<p>​        结构：HTML</p>
-<p>​        表现：CSS</p>
-<p>​        行为：JavaScript</p>
-<p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tags/index.asp">HTML标签参考手册</a></p>
-<h1 id="HTML快速入门"><a href="#HTML快速入门" class="headerlink" title="HTML快速入门"></a>HTML快速入门</h1><ol>
-<li><p>新建文本文件，后缀名改为**.html**</p>
-</li>
-<li><p>编写HTML结构标签</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;html&gt; &lt;!--根标签--&gt;
-	&lt;head&gt; &lt;!--加载资源信息和展示标题--&gt;
-		&lt;title&gt;&lt;/title&gt;
-	&lt;head&gt;
-	&lt;body&gt;
-		&lt;font color="颜色名"&gt;&lt;/font&gt;
-	&lt;/body&gt;
-&lt;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><h2 id="查询数据库"><a href="#查询数据库" class="headerlink" title="查询数据库"></a>查询数据库</h2><pre class="line-numbers language-none"><code class="language-none">show datebases;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><pre class="line-numbers language-none"><code class="language-none">#直接创建数据库
+create datebase 数据库1;
+#判断创建，如果不存在数据库2就创建
+create datebase if not exists 数据库2;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-</li>
-<li><p>在body中定义文字</p>
-</li>
-</ol>
-<p><strong>注</strong>：1. html文档标签不区分大小写</p>
-<p>​    2. html语法松散</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;html&gt; &lt;--根标签--&gt;
-	&lt;head&gt; &lt;--加载资源信息和展示标题--&gt;
-		&lt;title&gt;&lt;/title&gt;
-	&lt;head&gt;
-	&lt;body&gt;
-		&lt;Font color=颜色名&gt;hello world
-	&lt;/body&gt;
-&lt;html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><pre class="line-numbers language-none"><code class="language-none">drop datebase 数据库1;
+drop datebase if exists 数据库1;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h2 id="HTML基础标签"><a href="#HTML基础标签" class="headerlink" title="HTML基础标签"></a>HTML基础标签</h2><table>
-<thead>
-<tr>
-<th align="left">标签</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><h1>~</h1><h6></h6></td>
-<td align="left">定义标题，h1最大，h6最小</td>
-</tr>
-<tr>
-<td align="left"><font></font></td>
-<td align="left">定义文本的字体，尺寸，颜色</td>
-</tr>
-<tr>
-<td align="left"><b></b></td>
-<td align="left">定义粗体文本</td>
-</tr>
-<tr>
-<td align="left"><i></i></td>
-<td align="left">定义斜体文本</td>
-</tr>
-<tr>
-<td align="left"><u></u></td>
-<td align="left">定义文本下划线</td>
-</tr>
-<tr>
-<td align="left"><center></center></td>
-<td align="left">定义文本居中</td>
-</tr>
-<tr>
-<td align="left"><p></p></td>
-<td align="left">定义段落</td>
-</tr>
-<tr>
-<td align="left"><br></td>
-<td align="left">第一折行</td>
-</tr>
-<tr>
-<td align="left"><hr></td>
-<td align="left">定义水平线</td>
-</tr>
-</tbody></table>
-<pre class="line-numbers language-none"><code class="language-none">&lt;font face = "楷体" size = "5" color = "#80000000"&gt;hello world&lt;/font&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="查看当前正在使用的数据库"><a href="#查看当前正在使用的数据库" class="headerlink" title="查看当前正在使用的数据库"></a>查看当前正在使用的数据库</h2><pre class="line-numbers language-none"><code class="language-none">select datebase();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="图片音频视频标签"><a href="#图片音频视频标签" class="headerlink" title="图片音频视频标签"></a>图片音频视频标签</h2><table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><img></td>
-<td>定义图片</td>
-</tr>
-<tr>
-<td><audio></audio></td>
-<td>定义音频</td>
-</tr>
-<tr>
-<td><video></video></td>
-<td>定义视频</td>
-</tr>
-</tbody></table>
-<ol>
-<li>img：定义图片<ol>
-<li>src：规定显示的图像的URL（统一资源定位符）</li>
-<li>height：定义图像高度</li>
-<li>定义图像宽度</li>
-</ol>
-</li>
-<li>audio：定义音频，支持音频格式：MP3、WAV、OGG<ol>
-<li>src：规定音频的URL</li>
-<li>controls：显示播放控件</li>
-</ol>
-</li>
-<li>video：定义视频，支持的视频格式：MP4、WebM、OGG<ol>
-<li>src：规定视频的URL</li>
-<li>controls：显示播放控件</li>
-</ol>
-</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;图片-音频-视频&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;!--
-    尺寸单位
-        1.px像素 width="400" height="400"
-        2.百分比 width="20%"
-    路径
-        1. 绝对路径：完整路径
-        2. 相对路径：相对位置关系
---&gt;
+<h2 id="使用数据库"><a href="#使用数据库" class="headerlink" title="使用数据库"></a>使用数据库</h2><pre class="line-numbers language-none"><code class="language-none">use 数据库1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-&lt;!--相对路径--&gt;
-&lt;img src="log_img1.png" width="20%" height="400"&gt;
-
-&lt;!--绝对路径--&gt;
-&lt;img src="https://s1.ax1x.com/2022/04/10/LAl1Ld.jpg" width="20%" height="400"&gt;
-
-&lt;audio src="exchange_life.mp3" controls&gt;&lt;/audio&gt;
-
-&lt;!--&lt;video src="a.mp4" controls width="500" height="400"&gt;&lt;/video&gt;--&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="超链接标签"><a href="#超链接标签" class="headerlink" title="超链接标签"></a>超链接标签</h2><table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a></a></td>
-<td>定义超链接</td>
-</tr>
-</tbody></table>
-<ol>
-<li>href：指定访问资源的URL</li>
-<li>target：指定打开资源的方式<ol>
-<li>_self：默认值在当前页面打开</li>
-<li>_blank：在空白( •̀ ω •́ )y面打开</li>
-</ol>
-</li>
-</ol>
-<h2 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h2><ol>
-<li>有序列表（order list）</li>
-<li>无序列表（unorder list）</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><ol></ol></td>
-<td>定义有序列表</td>
-</tr>
-<tr>
-<td><ul></ul></td>
-<td>定义无序列表</td>
-</tr>
-<tr>
-<td><li></li></td>
-<td>定义列表项</td>
-</tr>
-</tbody></table>
-<p><strong>type：设置项目符号</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;图片-音频-视频&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;!--
-    尺寸单位
-        1.px像素 width="400" height="400"
-        2.百分比 width="20%"
-    路径
-        1. 绝对路径：完整路径
-        2. 相对路径：相对位置关系
---&gt;
-
-&lt;!--相对路径--&gt;
-&lt;img src="log_img1.png" width="20%" height="400"&gt;
-
-&lt;!--绝对路径--&gt;
-&lt;img src="https://s1.ax1x.com/2022/04/10/LAl1Ld.jpg" width="20%" height="400"&gt;
-
-&lt;audio src="exchange_life.mp3" controls&gt;&lt;/audio&gt;
-
-&lt;!--&lt;video src="a.mp4" controls width="500" height="400"&gt;&lt;/video&gt;--&gt;
-
-&lt;!--超链接标签--&gt;
-
-&lt;a href="https://www.w3school.com.cn/" target="_blank"&gt;w3school&lt;/a&gt;
-
-&lt;!--&lt;列表标签&gt;--&gt;
-&lt;!--有序列表--&gt;
-&lt;ol type="a"&gt;
-    &lt;li&gt;咖啡&lt;/li&gt;
-    &lt;li&gt;牛奶&lt;/li&gt;
-    &lt;li&gt;茶&lt;/li&gt;
-&lt;/ol&gt;
-&lt;!--无序列表--&gt;
-&lt;ul&gt;
-    &lt;li&gt;咖啡&lt;/li&gt;
-    &lt;li&gt;牛奶&lt;/li&gt;
-    &lt;li&gt;茶&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/body&gt;
-&lt;/html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h2><table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><table>
-<tbody><tr><td>定义表格</td>
-</tr>
-<tr>
-<td></td></tr><tr>
-<td>定义行</td>
-</tr>
-<tr>
-<td></td><td></td>
-<td>定义单元格</td>
-</tr>
-<tr>
-<td></td><th>
-</th><td>定义表头单元格</td>
-</tr>
-</tbody></table>
-<ol>
-<li>table：定义表格<ol>
-<li>border：规定表格边框的宽度</li>
-<li>width：规定表格的宽度</li>
-<li>cellspacing：规定单元格之间的空白</li>
-</ol>
-</li>
-<li>tr：定义行<ol>
-<li>align：定义表格行的内容对齐方式</li>
-</ol>
-</li>
-<li>td：定义单元格<ol>
-<li>rowspan：规定单元格可横跨的行数</li>
-<li>colspan：规定单元格可横跨的列数</li>
-</ol>
-</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://s1.ax1x.com/2022/04/10/LAUGwD.png" alt="LAUGwD.png"></p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;table width="50%" border="1" cellspacing="0"&gt;
-    &lt;tr height="50"&gt;
-        &lt;th colspan="2"&gt;序号&lt;/th&gt;
-        &lt;th&gt;品牌名称&lt;/th&gt;
-        &lt;th&gt;企业名称&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr align="center"&gt;
-        &lt;td&gt;010&lt;/td&gt;
-        &lt;td&gt;三只松鼠&lt;/td&gt;
-        &lt;td&gt;三只松鼠&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr align="center"&gt;
-        &lt;td rowspan="2"&gt;009&lt;/td&gt;
-        &lt;td&gt;优衣库&lt;/td&gt;
-        &lt;td&gt;优衣库&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr align="center"&gt;
-        &lt;td&gt;小米&lt;/td&gt;
-        &lt;td&gt;小米科技有限公司&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-&lt;/body&gt;
-&lt;/html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="数据库表操作"><a href="#数据库表操作" class="headerlink" title="数据库表操作"></a>数据库表操作</h1><h2 id="查询表"><a href="#查询表" class="headerlink" title="查询表"></a>查询表</h2><pre class="line-numbers language-none"><code class="language-none"># 查询所有表
+show tables;
+# 查看表结构
+desc 表名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
-<h2 id="布局标签"><a href="#布局标签" class="headerlink" title="布局标签"></a>布局标签</h2><table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><div></div></td>
-<td>d定义HTNL文档中一个区域部分，常与CSS连用，用来布局网页</td>
-</tr>
-<tr>
-<td><span></span></td>
-<td>用于组合行内元素</td>
-</tr>
-</tbody></table>
-<h2 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h2><p>表单：在网页中主要负责数据采集功能，使用</p><form>标签定义表单<br>表单项（元索）：不同类型的input 元素、下拉列表、文本域等标签描述<p></p>
-<table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td>定义表单</td>
-</tr>
-<tr>
-<td><input></td>
-<td>定义表单面，通过type属性控制输入形式</td>
-</tr>
-<tr>
-<td><label></label></td>
-<td>为表单项定义标注</td>
-</tr>
-<tr>
-<td><select></select></td>
-<td>定义下拉列表</td>
-</tr>
-<tr>
-<td><option></option></td>
-<td>定义下拉列表的列表项</td>
-</tr>
-<tr>
-<td><textarea>&lt;/td&gt;
-&lt;td&gt;定义文本域&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;p&gt;form：定义表单&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;action：规定当提交表单时向何处发送表单数据，URL&lt;/p&gt;
-&lt;p&gt;*&lt;em&gt;表单项数据要被提交，则必须指定name属性**&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;method：规定用于发送表单数据的方式&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;get：浏览器会将数据直接附在表单的 action URL之后。大小有限制&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;默认值&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;请求参数会拼接在URL后&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;URL长度有限制 4kb&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;post：浏览器会将数据放到http请求消息体中。大小无限制&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;请求参数会在http请求协议的请求体中&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;请求参数无限制&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;form action="#" method="post"&gt;
-    &lt;input type="text" name="username"&gt;
-    &lt;input type="submit"&gt;
-&lt;/form&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id="表单项"&gt;&lt;a href="#表单项" class="headerlink" title="表单项"&gt;&lt;/a&gt;表单项&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;input&gt;: 表单项，通过type属性控制输入形式&lt;/li&gt;
-&lt;li&gt;&lt;select&gt;:定义下拉列表，&lt;option&gt;定义列表项&lt;/li&gt;
-&lt;li&gt;&lt;textarea&gt;:文本域&lt;/li&gt;
-&lt;/ol&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;type取值&lt;/th&gt;
-&lt;th&gt;描述&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;默认值定义单行的输入字段&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;password&lt;/td&gt;
-&lt;td&gt;定义密码字段&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;radio&lt;/td&gt;
-&lt;td&gt;定义单选按钮&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;checkbox&lt;/td&gt;
-&lt;td&gt;定义复选框&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;file&lt;/td&gt;
-&lt;td&gt;定义文件上传按钮&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;hidden&lt;/td&gt;
-&lt;td&gt;定义隐藏的输入字段&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;submit&lt;/td&gt;
-&lt;td&gt;定义提交按钮，会把表单数据送到服务器&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;reset&lt;/td&gt;
-&lt;td&gt;定义重置按钮，会清除表单中的所有数据&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;button&lt;/td&gt;
-&lt;td&gt;定义可点击按钮&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h1 id="CSS导入方式"&gt;&lt;a href="#CSS导入方式" class="headerlink" title="CSS导入方式"&gt;&lt;/a&gt;CSS导入方式&lt;/h1&gt;&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;Title&lt;/title&gt;
-    &lt;style&gt;
-        span{
-            color: aquamarine;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;div style="color: antiquewhite"&gt;hello css&lt;/div&gt;
-&lt;span&gt;hello scc&lt;/span&gt;
-&lt;/body&gt;
-&lt;/html&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-
-
-&lt;h2 id="内联样式"&gt;&lt;a href="#内联样式" class="headerlink" title="内联样式"&gt;&lt;/a&gt;内联样式&lt;/h2&gt;&lt;p&gt;在标签内部使用style属性，属性值是css属性键值对&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;&lt;div stylr=:color:red"&gt;Hello CSS&lt;/div&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="内部样式"&gt;&lt;a href="#内部样式" class="headerlink" title="内部样式"&gt;&lt;/a&gt;内部样式&lt;/h2&gt;&lt;p&gt;定义style标签，在标签内部定义css样式&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;&lt;style  type="text/css"&gt;
-	div{
-        color:red;
-	}
-&lt;/style&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="外部样式"&gt;&lt;a href="#外部样式" class="headerlink" title="外部样式"&gt;&lt;/a&gt;外部样式&lt;/h2&gt;&lt;p&gt;定义link标签，引入外部的css文件&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;&lt;link rel="stylesheet" href="demo.css"&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;dome.css&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;div{
-    color:red
-}
-&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-
-
-&lt;h1 id="CSS选择器"&gt;&lt;a href="#CSS选择器" class="headerlink" title="CSS选择器"&gt;&lt;/a&gt;CSS选择器&lt;/h1&gt;&lt;p&gt;选择器是选取需设置样式的元素(标签)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;元素选择器&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;元素名称{
-    color:red:
-}
-div{
-    color:red:
-}&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;id选择器&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;#id属性值{
-    color:red;
-}
-#name{
-    color:red;
-}
-&lt;div id="name"&gt;hello&lt;/div&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;类选择器&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;.class属性值{
-    color:red;
-}
-.cls{
-    color:red
-}
-&lt;span class="cls"&gt;hello&lt;/span&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-
-
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id="CSS属性"&gt;&lt;a href="#CSS属性" class="headerlink" title="CSS属性"&gt;&lt;/a&gt;CSS属性&lt;/h1&gt;&lt;p&gt;&lt;a href="https://www.w3school.com.cn/tags/index.asp"&gt;HTML标签参考手册&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id="JavaScript"&gt;&lt;a href="#JavaScript" class="headerlink" title="JavaScript"&gt;&lt;/a&gt;JavaScript&lt;/h1&gt;&lt;p&gt;跨平台、面向对象的脚本语言，来控制网页行为&lt;/p&gt;
-&lt;h2 id="JavaScript引入方式"&gt;&lt;a href="#JavaScript引入方式" class="headerlink" title="JavaScript引入方式"&gt;&lt;/a&gt;JavaScript引入方式&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;内部脚本：将JS代码定义在HTML页面中&lt;/p&gt;
-&lt;p&gt;在HTML中，在JavaScript代码必须位于&lt;script&gt;与&lt;/script&gt;标签之间&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;&lt;script&gt;
-	alert("hello JS");
-&lt;/script&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;注&lt;/strong&gt;：1.在HTML文档中可以在任意地方，放置任意数量的&lt;script&gt;&lt;/p&gt;
-&lt;p&gt;​    2. 一般把脚本置于&lt;body&gt;元素的底部，可改善显示速度&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;外部脚本：将JS代码定义在外部JS文件中，然后引入到HTML页面中&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;外部文件：demo.js&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;alert("hello JS");&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;引入外部文件js&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;&lt;script src="相对路径"&gt;&lt;/script&gt;&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;1.外部标签不能有script&lt;/p&gt;
-&lt;p&gt;​    2. script标签不能自闭合(&lt;script/&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="JavaScript基础语法"&gt;&lt;a href="#JavaScript基础语法" class="headerlink" title="JavaScript基础语法"&gt;&lt;/a&gt;JavaScript基础语法&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;区分大小写&lt;/li&gt;
-&lt;li&gt;结尾可有分号或没有&lt;/li&gt;
-&lt;li&gt;单行注释：//&lt;/li&gt;
-&lt;li&gt;多行注释；/**/&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="输出语句"&gt;&lt;a href="#输出语句" class="headerlink" title="输出语句"&gt;&lt;/a&gt;输出语句&lt;/h3&gt;&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;window.alert()写入警告框，window可省略
-document.write()//写入html输入
-console.log()//写入浏览器控制台&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id="变量"&gt;&lt;a href="#变量" class="headerlink" title="变量"&gt;&lt;/a&gt;变量&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;var&lt;/strong&gt;关键字说明变量&lt;/p&gt;
-&lt;p&gt;JavaScript变量可以存放不同类型的值&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;var text = 1;
-text = "服“&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;​    var:&lt;/p&gt;
-&lt;p&gt;​    1. 作用域：全局变量&lt;/p&gt;
-&lt;p&gt;​    2. 变量可以重复定义&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;let&lt;/strong&gt;关键字定义变量，只在let关键字所在的代码块有用，并且不能重复定义&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;const&lt;/strong&gt;声明一个只读常量，申明后不可更改&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="数据类型"&gt;&lt;a href="#数据类型" class="headerlink" title="数据类型"&gt;&lt;/a&gt;数据类型&lt;/h3&gt;&lt;h4 id="原始类型"&gt;&lt;a href="#原始类型" class="headerlink" title="原始类型"&gt;&lt;/a&gt;原始类型&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;number&lt;/strong&gt;：数字(整数，小数，NaN(不是数字的数字))&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;string&lt;/strong&gt;：字符，字符串&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;boolean&lt;/strong&gt;：布尔&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;null&lt;/strong&gt;：空&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;undefined&lt;/strong&gt;：声明的变量没有初始化时，该变量默认值是undefined&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;使用typeof可以获取数据类型&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;alert(typeof age);&lt;/p&gt;
-&lt;h3 id="运算符"&gt;&lt;a href="#运算符" class="headerlink" title="运算符"&gt;&lt;/a&gt;运算符&lt;/h3&gt;&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;一元运算符：++，--
-
-算术运算符：+，-，*，/，%
-
-赋值运算符：=，-=...
-
-关系运算符：&gt;,&lt;,&gt;=,==，!=, ===(全等于)...
-
-逻辑运算符：&amp;&amp;，||，！
-
-三元运算符：条件表达式？，true_value:false_value&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;var a = 1;
-var a2 = 1;
-alert(a == a1)//结果：true
-/*
-==：
-	判断类型是否一样，如果不一样则进行类型转换，在比较值
-===：
-	判断类型是否一样，不一样直接false
-	一样再去比较
-*/
-/*
- 类型转换：
- 		1. 其他类型转为number：
- 			1.string：按照字符串的字面值，转为数字，如果不是数字则转为NaN，一般使用parseInt
- 				string str = +"abc"//+：表示是正数，结果：NaN
- 				string str1 = ”1“；
- 				alert.(parseInt(str));
- 			2.boolean：truezhuanwei1，false转为0
- 		2.其他类型转为boolean：
- 			1.number：0转为false，其他数字转为true
- 			2.string：空字符串转为false，其他为true
- 			3.null：false
- 			4.undefined：false
-*/&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id="流程控制语句"&gt;&lt;a href="#流程控制语句" class="headerlink" title="流程控制语句"&gt;&lt;/a&gt;流程控制语句&lt;/h3&gt;&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;if:
-switch:
-for:
-while:
-do...while:&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id="函数"&gt;&lt;a href="#函数" class="headerlink" title="函数"&gt;&lt;/a&gt;函数&lt;/h3&gt;&lt;p&gt;JavaScript函数通过function关键词进行定义&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;方式一：
-function functionName(){
+<h2 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h2><pre class="line-numbers language-none"><code class="language-none">create table(
+    字段名 数据类型,
+    字段名 数据类型,
     ...
-}
-方式二：
-var functionName = function(参数列表){
-    ...
-}
-var add = function(a, b){
-    return a + b;
-}&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    字段名 数据类型
+);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-&lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;形式参数不需要类型&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;返回值也不需要定义，可以在函数内部直接使用return返回会&lt;/p&gt;
-&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;function add(a,b){
-    return a + b;
-}
-let result = add(参数1，参数2);
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p><a target="_blank" rel="noopener" href="https://imgse.com/i/ppizx1K"><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://s1.ax1x.com/2023/03/02/ppizx1K.png" alt="H9yBpn.png"></a></p>
+<h2 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h2><pre class="line-numbers language-none"><code class="language-none">drop table 表名;
+drop table if exists 表名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h2><pre class="line-numbers language-none"><code class="language-none">#修改表名
+alter table 表名 rename to 新表名;
+#添加一列
+alter table 表名 add 列名 数据类型;
+#修改数据类型
+alter table 表名 modify 列名 新数据类型;
+#修改类名数据类型
+alter table 表名 change 列名 新列名 新数据类型;
+#删除列
+alter table 表名 drop 列名;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="数据库数据操作"><a href="#数据库数据操作" class="headerlink" title="数据库数据操作"></a>数据库数据操作</h1><h2 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h2><pre class="line-numbers language-none"><code class="language-none">#指定列添加数据
+insert into 表名(列1,列2,...) valuse(值1,值2,...);
+#给全部列添加数据
+insert into 表名 valuse(值1,值2,...);
+#批量添加数据
+insert into 表名(列1,列2,...) values(值1,值2,...),(值1,值2,...),(值1,值2,...)...;
+insert into 表名 values(值1,值2,...),(值1,值2,...),(值1,值2,...)...;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="修改表数据"><a href="#修改表数据" class="headerlink" title="修改表数据"></a>修改表数据</h2><pre class="line-numbers language-none"><code class="language-none">update 表名 set 列1=值1,列2=值2,...[where 条件];
+# 不加条件将修改全部<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h2><pre class="line-numbers language-none"><code class="language-none">delete from 表名 [where 条件]
+# 不加条件将删除全部<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h1 id="数据库查询操作"><a href="#数据库查询操作" class="headerlink" title="数据库查询操作"></a>数据库查询操作</h1><h2 id="查询多个字段"><a href="#查询多个字段" class="headerlink" title="查询多个字段"></a>查询多个字段</h2><pre class="line-numbers language-none"><code class="language-none">select 字段列表 from 表名;
+select * from 表名;-- 查询所有数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="去除重复记录"><a href="#去除重复记录" class="headerlink" title="去除重复记录"></a>去除重复记录</h2><pre class="line-numbers language-none"><code class="language-none">select distinct 字段列表 from 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="起别名"><a href="#起别名" class="headerlink" title="起别名"></a>起别名</h2><pre class="line-numbers language-none"><code class="language-none">#as[as可以省略]
+select name,math [as] 数学成绩,english from 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h2><pre class="line-numbers language-none"><code class="language-none">select * from 表名 where 条件;
+#查询年龄15到20之间的人
+select name from 表名 where age between 15 and 20;
+#查询年龄15或20的人
+select name from 表名 where age = 15 or age = 20;
+select name from 表名 where age in(18,20);
+#查询成绩为null的人
+select name from 表名 grade is null;
+#查询成绩不为null的人
+select name from 表名 grade is not null;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/ppizz6O"><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://s1.ax1x.com/2023/03/02/ppizz6O.png"></a></p>
+<h2 id="模糊查询"><a href="#模糊查询" class="headerlink" title="模糊查询"></a>模糊查询</h2><p>通配符：</p>
+<p><strong>_</strong>:$\textcolor{red}{代表单个任意字符}$</p>
+<p><strong>%</strong>:$\textcolor{red}{代表任意个数的字符}$</p>
+<pre class="line-numbers language-none"><code class="language-none">#查询姓w的人
+select * from 表名 where name like 'w%';;
+#查询第二个字是w的人
+select * from 表名 where name like '_w%';
+#查询名字包含w的人
+select * from 表名 where name likr '%w%';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="排序查询"><a href="#排序查询" class="headerlink" title="排序查询"></a>排序查询</h2><pre class="line-numbers language-none"><code class="language-none">select 字段列表 from 表名 order by 排序字段名1 [排序方式1],排序字段名2 [排序方式2]...;
+# 按年龄升序排列
+select * from 表名 order by age;
+select * from 表名 order by age asc;
+# 按成绩排列如果成绩一样则按年龄升序排列
+select * from 表名 order by grade desc,age asc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>排序方式：ASC升序（默认方式）</p>
+<p>​           DESC：降序</p>
+<p>$\textcolor{red}{如果有多个排序条件，当前面条件值一样时，才会按照第二天排序}$</p>
+<h2 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h2><p>聚合函数：将一列数据作为一个整体，进行纵向计算</p>
+<pre class="line-numbers language-none"><code class="language-none">select 聚合函数(列名) from 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/ppizvp6"><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://s1.ax1x.com/2023/03/02/ppizvp6.png"></a></p>
+<p>$\textcolor{red}{null值不参与所有聚合函数函数运算}$</p>
+<h2 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h2><pre class="line-numbers language-none"><code class="language-none">select 字段列表 from 表名 [where 分组前条件限定] group by 分组字段名 [having 分组后条件过滤]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>$\textcolor{red}{分组之后，查询的字段为聚合函数和分组字段，查询其他字段无意义}$</p>
+<p>$\textcolor{red}{where和having的区别：}$ 执行时机不一样，where分组前，having分组后</p>
+<p>​                        判断条件不同，having可以对聚会函数判断，where不可以</p>
+<p>执行顺序：where&gt;聚合函数&gt;having</p>
+<h2 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h2><pre class="line-numbers language-none"><code class="language-none">select 字段列表 from 表名 limit 起始索引,查询条目数;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>起始索引(从0开始)=(当前页码-1)*每页显示的条数</p>
+<h1 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h1><p>可以在$\textcolor{red}{建表时添加约束，也可以建表后添加}$</p>
+<p>==建表后==</p>
+<pre class="line-numbers language-none"><code class="language-none"># 非空和唯一约束
+alter table 表名 modify 字段名 数据类型 关键字
+# 主键约束
+alter table 表名 add primary key(字段名)
+# 默认约束
+alter table 表名 alter 列名 set default 默认值
+# 检查约束
+alter table 表名 add constraint 检查约束名· check(检查约束)
+# 外键约束
+alter table 表名 add constraint 外键名称 foreign key (外键字段名称) references 主表名称(主表列名称)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>==删除约束==</p>
+<pre class="line-numbers language-none"><code class="language-none"># 非空约束
+alter table 表名 modify 字段名 数据类型
+# 唯一约束
+alter table 表名 modify drop index 字段名
+# 主键约束
+alter table 表名 drop primary key
+# 默认约束
+alter table 表名 alter 列名 drop default
+#检查约束
+alter table 表名 drop constraint 检查约束名
+# 外键约束
+alter table 表名 drop foreign key 外键名称<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="非空约束"><a href="#非空约束" class="headerlink" title="非空约束"></a>非空约束</h2><p>关键字：NOT NULL</p>
+<pre class="line-numbers language-none"><code class="language-none">create table stu(
+	int age not null, #非空
+)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="唯一约束"><a href="#唯一约束" class="headerlink" title="唯一约束"></a>唯一约束</h2><p>关键字：UNIQUE</p>
+<pre class="line-numbers language-none"><code class="language-none">create table stu(
+	age int not null, # 非空
+	name varchar(50) not null unique, # 非空且唯一
+)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="主键约束"><a href="#主键约束" class="headerlink" title="主键约束"></a>主键约束</h2><p>关键字：PRIMARY KEY</p>
+<pre class="line-numbers language-none"><code class="language-none">create table stu(
+	id int primary key auto_increment,# 主键且自增长
+	age int not null, # 非空
+	name varchar(50) not null unique, # 非空且唯一
+)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="检查约束"><a href="#检查约束" class="headerlink" title="检查约束"></a>检查约束</h2><p>关键字：CHECK</p>
+<pre class="line-numbers language-none"><code class="language-none">create table stu(
+	id int primary key auto_increment,# 主键且自增长
+	age int not null, # 非空
+	name varchar(50) not null unique, # 非空且唯一
+	check(age &gt; 18 and age &lt; 60),
+)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="默认约束"><a href="#默认约束" class="headerlink" title="默认约束"></a>默认约束</h2><p>关键字：DEFAULT</p>
+<pre class="line-numbers language-none"><code class="language-none">create table stu(
+	id int primary key,# 主键且自增长
+	age int not null, # 非空
+	name varchar(50) not null unique, # 非空且唯一
+	bonus double(7,2) default 0 # 没有默认为0
+)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="外键约束"><a href="#外键约束" class="headerlink" title="外键约束"></a>外键约束</h2><p>关键字：FOREIGN KEY    </p>
+<pre class="line-numbers language-none"><code class="language-none">create table stu(
+	id int primary key,# 主键且自增长
+	age int not null, # 非空
+	name varchar(50) not null unique, # 非空且唯一
+	bonus double(7,2) default 0 # 没有默认为0
+	teache varchar(50)
+	constraint 外键名称 foreign key(外键列名) refernnces 主表(主表列名)
+)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>两个表之间建立连接</p>
+<h1 id="表关系"><a href="#表关系" class="headerlink" title="表关系"></a>表关系</h1><h2 id="一对多"><a href="#一对多" class="headerlink" title="一对多"></a>一对多</h2><p>一个部门对应多个员工</p>
+<p>$\textcolor{red}{在多的一方建立外表，指向一的一方主键}$</p>
+<h2 id="多对多"><a href="#多对多" class="headerlink" title="多对多"></a>多对多</h2><p>商品与订单</p>
+<p>$\textcolor{red}{建立第三张中间表，中间表至少包含两个外键，分别关联两方主键}$</p>
+<h2 id="一对一"><a href="#一对一" class="headerlink" title="一对一"></a>一对一</h2><p>用户和用户详情</p>
+<p>多用于表的拆分，将一个实体中经常使用的字段放一张表，不常用的字段放一张表</p>
+<p>$\textcolor{red}{在任意一方加入外键，关联另一方的主键，并且外键唯一}$</p>
+<h1 id="多表查询"><a href="#多表查询" class="headerlink" title="多表查询"></a>多表查询</h1><pre class="line-numbers language-none"><code class="language-none">select * from 表1, 表2; -- 缺点会产生笛卡尔积：有A，B两个集合，去A，B所有组合情况
+# 消除无效数据
+select * from 表1, 表2 where 条件; -- 连接查询
+# 内连接：查询A，B的交集
 /*
- JavaScript中函数调用可以传递任意个数参数
- let result = add(参数1，参数2, ...);
- 但是计算参数是函数的形参
-*/&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+外连接：
+	  左外连接：相当于查询A表所有数据和交集部分数据
+	  右外连接：相当于查询B表所有数据和交集部分数据
+*/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h2 id="内-amp-外连接"><a href="#内-amp-外连接" class="headerlink" title="内&amp;外连接"></a>内&amp;外连接</h2><pre class="line-numbers language-none"><code class="language-none"># 隐式内连接
+select 字段列表 from 表1, 表2... where 条件
+# 显示内连接
+select 字段列表 from 表1 [inner] join 表2 on 条件
+# 左外连接
+select 字段列表 from 表1 LEFT [outer] join 表2 on 条件
+# 右外连接
+select 字段列表 from 表1 right [outer] join 表2 on 条件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h2 id="子查询（嵌套查询）"><a href="#子查询（嵌套查询）" class="headerlink" title="子查询（嵌套查询）"></a>子查询（嵌套查询）</h2><pre class="line-numbers language-none"><code class="language-none"># 单行单列：使用=!=&gt;&lt;等进行条件判断
+select 字段列表 from 表 where 字段名 = (select ...);
+# 多行多列：使用in关键字进行条件判断
+select 字段列表 from 表 where 字段名 in (子查询(select ...));
+# 多行多列：作为虚拟表
+select 字段列表 from (子查询) where 条件;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;​    &lt;/p&gt;
-&lt;h2 id="JavaScript常用对象"&gt;&lt;a href="#JavaScript常用对象" class="headerlink" title="JavaScript常用对象"&gt;&lt;/a&gt;JavaScript常用对象&lt;/h2&gt;&lt;p&gt;&lt;a href="https://www.w3school.com.cn/jsref/index.asp"&gt;参考手册&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="Array"&gt;&lt;a href="#Array" class="headerlink" title="Array"&gt;&lt;/a&gt;Array&lt;/h3&gt;&lt;pre class="line-numbers language-none"&gt;&lt;code class="language-none"&gt;定义：
-var 变量名 = new Array(元素列表)；
-var 变量名 = [元素列表]；
-var arr = new Array(1, 2, 3);
-var arr = [1, 2 ,3];
+<h1 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h1><p>一种机制，一个操作序列，包含一组操作数据库指令</p>
+<p>同时成功，同时失败</p>
+<p>不可分开的工作逻辑单元</p>
+<pre class="line-numbers language-none"><code class="language-none"># 开启事务
+start transaction或者begin
+# 提交事务
+commit
+# 回滚事务（出异常时）
+rollback<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-访问：
-arr[索引] = 值；&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+<p>$\textcolor{red}{事务四大特征}$:</p>
+<pre><code>           1. 原子性：最小操作单位，同时成功同时失败
+        2. 一致性：事务完成时，所有数据都保持一致状态
+        3. 隔离性：多个事务之间，操作的可见性
+        4. 持久性：事务一旦提交或回滚，对数据库中数据的改变是永久的
+</code></pre>
 
-&lt;p&gt;&lt;strong&gt;注&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;​    JS数组类似Java集合，长度，类型都可变&lt;/p&gt;
-&lt;h2 id="BOM"&gt;&lt;a href="#BOM" class="headerlink" title="BOM"&gt;&lt;/a&gt;BOM&lt;/h2&gt;&lt;h2 id="DOM"&gt;&lt;a href="#DOM" class="headerlink" title="DOM"&gt;&lt;/a&gt;DOM&lt;/h2&gt;&lt;h2 id="事件监听"&gt;&lt;a href="#事件监听" class="headerlink" title="事件监听"&gt;&lt;/a&gt;事件监听&lt;/h2&gt;</textarea></td></tr></tbody></table></form></td></tr></tbody></table>
                 
             </div>
             <hr/>
@@ -1364,7 +937,7 @@ arr[索引] = 值；&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wenlwei.cn/posts/1dee6295.html">https://wenlwei.cn/posts/1dee6295.html</a>
+                    <a href="https://wenlwei.cn/posts/0.html">https://wenlwei.cn/posts/0.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1401,11 +974,7 @@ arr[索引] = 值；&lt;span aria-hidden="true" class="line-numbers-rows"&gt;&lt
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/HTML%EF%BC%8CCSS%EF%BC%8Cweb/">
-                                    <span class="chip bg-color">HTML，CSS，web</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -1921,9 +1490,10 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/posts/0.html">
                     <div class="card-image">
@@ -1941,9 +1511,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1952,6 +1522,7 @@ new Valine({
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -1962,13 +1533,13 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/7c10b52f.html">
+                <a href="/posts/1dee6295.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928020152.jpg" class="responsive-img" alt="KNN">
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021440.jpg" class="responsive-img" alt="学习笔记——三剑客">
                         
-                        <span class="card-title">KNN</span>
+                        <span class="card-title">学习笔记——三剑客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1979,7 +1550,7 @@ new Valine({
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-17
                             </span>
                         <span class="publish-author">
                             
@@ -1992,8 +1563,8 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">机器学习</span>
+                    <a href="/tags/HTML%EF%BC%8CCSS%EF%BC%8Cweb/">
+                        <span class="chip bg-color">HTML，CSS，web</span>
                     </a>
                     
                 </div>
